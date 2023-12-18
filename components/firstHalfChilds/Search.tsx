@@ -1,9 +1,15 @@
-import {Image, StyleSheet, View} from 'react-native';
+import {Image, StyleSheet, TextInput, View} from 'react-native';
 
 const Search = (): JSX.Element => {
   return (
     <View style={styles.searchWrapper}>
-      <View style={styles.inputWrapper}></View>
+      <View style={styles.inputWrapper}>
+        <Image
+          style={styles.searchIcon}
+          source={require('../../assets/search.png')}
+        />
+        <TextInput style={styles.input} placeholder="Search coffee" />
+      </View>
     </View>
   );
 };
@@ -19,9 +25,26 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 10,
     height: 52,
     backgroundColor: '#525252',
+    paddingLeft: 21,
+    paddingRight: 5,
+    justifyContent: 'center',
   },
 
   inputWrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
     width: '80%',
+  },
+
+  searchIcon: {
+    height: 20,
+    width: 20,
+  },
+
+  input: {
+    color: '#989898',
+    fontSize: 14,
+    fontWeight: '400',
   },
 });
