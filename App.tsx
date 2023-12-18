@@ -6,6 +6,14 @@ import MainPage from './components/MainPage';
 function App(): React.JSX.Element {
   const [welcome, setWelcome] = useState<boolean>(false);
 
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      setWelcome(true);
+    }, 2000);
+
+    return () => clearTimeout(timeOut);
+  }, []);
+
   return (
     <View style={styles.main}>{welcome ? <MainPage /> : <Welcome />}</View>
   );
