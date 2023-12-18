@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 
 const info = (): JSX.Element => {
   return (
@@ -7,6 +7,8 @@ const info = (): JSX.Element => {
         <Text style={styles.title}>location</Text>
         <Text style={styles.whereIs}>Bilzen,Tanjungbalai.</Text>
       </View>
+
+      <Image source={require('../../assets/avatar.png')} />
     </View>
   );
 };
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
   },
 
   whereIs: {
-    color: 'white',
+    color: '#DDD',
     fontSize: 14,
     fontWeight: '600',
   },
