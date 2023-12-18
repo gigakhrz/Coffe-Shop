@@ -20,5 +20,7 @@ const styles = StyleSheet.create({
   firstHalfWrapper: {
     width: '100%',
     height: 250,
+    paddingTop: 25,
+    paddingHorizontal: 31,
   },
 });
