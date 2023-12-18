@@ -5,7 +5,7 @@ const FirstHalf = (): JSX.Element => {
   return (
     <LinearGradient
       style={styles.firstHalfWrapper}
-      colors={['#131313', '#525252']}
+      colors={['#131313', '#333333']}
       start={{x: 1, y: 1}}
       end={{x: 1, y: 1}}></LinearGradient>
   );
