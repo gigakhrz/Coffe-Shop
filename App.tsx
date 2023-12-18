@@ -1,7 +1,12 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import Welcome from './components/Welcome';
 
 function App(): React.JSX.Element {
-  return <></>;
+  return (
+    <View>
+      <Welcome />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({});

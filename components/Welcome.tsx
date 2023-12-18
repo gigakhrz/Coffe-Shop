@@ -1,5 +1,11 @@
+import {Image, View} from 'react-native';
+
 const Welcome = (): JSX.Element => {
-  return <></>;
+  return (
+    <View>
+      <Image source={require('../assets/coffe.png')} />
+    </View>
+  );
 };
 
 export default Welcome;
