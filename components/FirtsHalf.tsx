@@ -24,5 +24,8 @@ const styles = StyleSheet.create({
     height: 250,
     paddingTop: 25,
     paddingHorizontal: 31,
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 26,
   },
 });
