@@ -1,11 +1,19 @@
-import {Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
+import FirstHalf from './FirtsHalf';
 
 const MainPage = (): JSX.Element => {
   return (
-    <View>
-      <Text>gamarjoba achi shen es gamogiva</Text>
-    </View>
+    <ScrollView style={styles.wrapper}>
+      <FirstHalf />
+    </ScrollView>
   );
 };
 
 export default MainPage;
+
+const styles = StyleSheet.create({
+  wrapper: {
+    flex: 1,
+  },
+});
