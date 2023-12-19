@@ -1,4 +1,4 @@
-import {Image, ImageBackground, StyleSheet, Text, View} from 'react-native';
+import {ImageBackground, StyleSheet, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 const Welcome = (): JSX.Element => {
