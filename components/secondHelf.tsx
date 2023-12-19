@@ -1,7 +1,12 @@
 import {StyleSheet, View} from 'react-native';
+import Promotions from './secondHelfChilds/Promotions';
 
 const secondHelf = (): JSX.Element => {
-  return <View></View>;
+  return (
+    <View style={style.sHWrapper}>
+      <Promotions />
+    </View>
+  );
 };
 
 export default secondHelf;
