@@ -1,7 +1,11 @@
-import {StyleSheet} from 'react-native';
+import {ImageBackground, StyleSheet} from 'react-native';
 
 const Promotions = (): JSX.Element => {
-  return <></>;
+  return (
+    <ImageBackground
+      source={require('../../assets/promotion.png')}
+      resizeMode="cover"></ImageBackground>
+  );
 };
 
 export default Promotions;
