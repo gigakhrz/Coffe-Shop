@@ -1,11 +1,17 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 const secondHelf = (): JSX.Element => {
-  return <></>;
+  return <View></View>;
 };
 
 export default secondHelf;
 
 const style = StyleSheet.create({
-  sHWrapper: {},
+  sHWrapper: {
+    display: 'flex',
+    width: '100%',
+    flexDirection: 'column',
+    gap: 26,
+    alignItems: 'center',
+  },
 });
