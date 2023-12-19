@@ -1,7 +1,7 @@
 import {StyleSheet, View} from 'react-native';
 import Promotions from './secondHelfChilds/Promotions';
 
-const secondHelf = (): JSX.Element => {
+const SecondHelf = (): JSX.Element => {
   return (
     <View style={style.sHWrapper}>
       <Promotions />
@@ -9,7 +9,7 @@ const secondHelf = (): JSX.Element => {
   );
 };
 
-export default secondHelf;
+export default SecondHelf;
 
 const style = StyleSheet.create({
   sHWrapper: {
