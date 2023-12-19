@@ -1,4 +1,10 @@
-import {Image, StyleSheet, TextInput, View} from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
 const Search = (): JSX.Element => {
   return (
@@ -12,8 +18,12 @@ const Search = (): JSX.Element => {
           style={styles.input}
           placeholderTextColor="#989898"
           placeholder="Search coffee"
+          underlineColorAndroid="#525252"
         />
       </View>
+      <TouchableOpacity>
+        <Image source={require('../../assets/sorting.png')} />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -31,7 +41,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#525252',
     paddingLeft: 21,
     paddingRight: 5,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 
   inputWrapper: {
@@ -48,7 +61,7 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    color: '#989898',
+    color: 'white',
     fontSize: 14,
     fontWeight: '400',
   },
