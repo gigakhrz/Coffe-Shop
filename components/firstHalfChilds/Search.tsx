@@ -8,7 +8,11 @@ const Search = (): JSX.Element => {
           style={styles.searchIcon}
           source={require('../../assets/search.png')}
         />
-        <TextInput style={styles.input} placeholder="Search coffee" />
+        <TextInput
+          style={styles.input}
+          placeholderTextColor="#989898"
+          placeholder="Search coffee"
+        />
       </View>
     </View>
   );
@@ -35,6 +39,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     width: '80%',
+    gap: 12,
   },
 
   searchIcon: {
