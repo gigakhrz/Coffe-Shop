@@ -25,6 +25,12 @@ const styles = StyleSheet.create({
     width: 315,
     height: 140,
     marginTop: -70,
+    paddingLeft: 24,
+    paddingBottom: 8,
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    gap: 15,
   },
 
   textWrapper: {
