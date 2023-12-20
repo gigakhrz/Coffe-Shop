@@ -1,0 +1,104 @@
+{
+  "coffee_categories": [
+    {
+      "category": "Cappuccino",
+      "coffees": [
+        {
+          "title": "Classic Cappuccino",
+          "price": 4.99,
+          "image": "classic_cappuccino.jpg"
+        },
+        {
+          "title": "Caramel Cappuccino",
+          "price": 5.99,
+          "image": "caramel_cappuccino.jpg"
+        },
+        {
+          "title": "Hazelnut Cappuccino",
+          "price": 5.49,
+          "image": "hazelnut_cappuccino.jpg"
+        },
+        {
+          "title": "Mocha Cappuccino",
+          "price": 6.49,
+          "image": "mocha_cappuccino.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Macchiato",
+      "coffees": [
+        {
+          "title": "Caramel Macchiato",
+          "price": 5.99,
+          "image": "caramel_macchiato.jpg"
+        },
+        {
+          "title": "Vanilla Macchiato",
+          "price": 5.49,
+          "image": "vanilla_macchiato.jpg"
+        },
+        {
+          "title": "Toffee Nut Macchiato",
+          "price": 6.49,
+          "image": "toffee_nut_macchiato.jpg"
+        },
+        {
+          "title": "Chocolate Macchiato",
+          "price": 6.99,
+          "image": "chocolate_macchiato.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Latte",
+      "coffees": [
+        {
+          "title": "Vanilla Latte",
+          "price": 4.99,
+          "image": "vanilla_latte.jpg"
+        },
+        {
+          "title": "Caramel Latte",
+          "price": 5.49,
+          "image": "caramel_latte.jpg"
+        },
+        {
+          "title": "Hazelnut Latte",
+          "price": 5.99,
+          "image": "hazelnut_latte.jpg"
+        },
+        {
+          "title": "White Chocolate Latte",
+          "price": 6.49,
+          "image": "white_chocolate_latte.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Americano",
+      "coffees": [
+        {
+          "title": "Classic Americano",
+          "price": 3.99,
+          "image": "classic_americano.jpg"
+        },
+        {
+          "title": "Mint Americano",
+          "price": 4.49,
+          "image": "mint_americano.jpg"
+        },
+        {
+          "title": "Cinnamon Americano",
+          "price": 4.99,
+          "image": "cinnamon_americano.jpg"
+        },
+        {
+          "title": "Maple Americano",
+          "price": 5.49,
+          "image": "maple_americano.jpg"
+        }
+      ]
+    }
+  ]
+}
