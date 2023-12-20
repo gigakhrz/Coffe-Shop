@@ -8,7 +8,11 @@ const Promotions = (): JSX.Element => {
       imageStyle={{borderRadius: 10}}
       resizeMode="cover">
       <View style={styles.textWrapper}>
-        <Text style={styles.text}>Buy one get one Free</Text>
+        <Text style={styles.text}>Buy one get</Text>
+      </View>
+
+      <View style={styles.textWrapper}>
+        <Text style={styles.text}>one Free</Text>
       </View>
     </ImageBackground>
   );
