@@ -11,7 +11,7 @@ const Promotions = (): JSX.Element => {
         <Text style={styles.text}>Buy one get</Text>
       </View>
 
-      <View style={styles.textWrapper}>
+      <View style={styles.textWrapper2}>
         <Text style={styles.text}>one Free</Text>
       </View>
     </ImageBackground>
@@ -30,17 +30,27 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'flex-end',
-    gap: 15,
+    gap: 10,
   },
 
   textWrapper: {
     backgroundColor: 'black',
     height: 25,
+    width: 200,
+  },
+
+  textWrapper2: {
+    backgroundColor: 'black',
+    height: 25,
+    width: 149,
   },
 
   text: {
     fontSize: 32,
     fontWeight: '600',
     color: 'white',
+    marginTop: -22,
+    zIndex: 1,
+    alignSelf: 'center',
   },
 });
