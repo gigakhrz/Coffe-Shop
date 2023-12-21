@@ -1,10 +1,12 @@
 import {StyleSheet, View} from 'react-native';
 import Promotions from './secondHelfChilds/Promotions';
+import Categories from './secondHelfChilds/Categories';
 
 const SecondHelf = (): JSX.Element => {
   return (
     <View style={style.sHWrapper}>
       <Promotions />
+      <Categories />
     </View>
   );
 };
