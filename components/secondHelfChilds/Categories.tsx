@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   CategoriesWrapper: {
     flexDirection: 'row',
     minWidth: '100%',
-    marginLeft: 31,
+    paddingLeft: 31,
     display: 'flex',
   },
 
@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     padding: 10,
-    marginHorizontal: 15,
+    marginHorizontal: 10,
+    borderRadius: 12,
   },
 
   text: {
