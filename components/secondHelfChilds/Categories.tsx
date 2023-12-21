@@ -5,10 +5,13 @@ const Categories = (): JSX.Element => {
   console.log(data.coffee_categories);
 
   return (
-    <ScrollView style={styles.CategoriesWrapper}>
-      {data.coffee_categories.map(item => {
+    <ScrollView
+      horizontal={true}
+      showsHorizontalScrollIndicator={false}
+      style={styles.CategoriesWrapper}>
+      {data.coffee_categories.map((item, index) => {
         return (
-          <View style={styles.category}>
+          <View key={index} style={styles.category}>
             <Text style={styles.text}>{item.category}</Text>
           </View>
         );
@@ -21,9 +24,10 @@ export default Categories;
 
 const styles = StyleSheet.create({
   CategoriesWrapper: {
-    display: 'flex',
     flexDirection: 'row',
-    gap: 7,
+    minWidth: '100%',
+    marginLeft: 31,
+    display: 'flex',
   },
 
   category: {
@@ -31,6 +35,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     padding: 10,
+    marginHorizontal: 15,
   },
 
   text: {
