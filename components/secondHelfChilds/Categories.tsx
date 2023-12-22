@@ -1,4 +1,11 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import {
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableWithoutFeedback,
+  View,
+} from 'react-native';
 import data from '../../data.json';
 
 const Categories = (): JSX.Element => {
@@ -11,9 +18,11 @@ const Categories = (): JSX.Element => {
       style={styles.CategoriesWrapper}>
       {data.coffee_categories.map((item, index) => {
         return (
-          <View key={index} style={styles.category}>
-            <Text style={styles.text}>{item.category}</Text>
-          </View>
+          <TouchableWithoutFeedback key={index}>
+            <View style={styles.category}>
+              <Text style={styles.text}>{item.category}</Text>
+            </View>
+          </TouchableWithoutFeedback>
         );
       })}
     </ScrollView>
