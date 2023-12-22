@@ -16,9 +16,9 @@ const Categories = (): JSX.Element => {
       horizontal={true}
       showsHorizontalScrollIndicator={false}
       style={styles.CategoriesWrapper}>
-      {data.coffee_categories.map((item, index) => {
+      {data.coffee_categories.map(item => {
         return (
-          <TouchableWithoutFeedback key={index}>
+          <TouchableWithoutFeedback key={item.id}>
             <View style={styles.category}>
               <Text style={styles.text}>{item.category}</Text>
             </View>
