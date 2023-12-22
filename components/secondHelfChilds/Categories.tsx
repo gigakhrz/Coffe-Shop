@@ -25,8 +25,8 @@ export default Categories;
 const styles = StyleSheet.create({
   CategoriesWrapper: {
     flexDirection: 'row',
-    minWidth: '100%',
-    paddingLeft: 31,
+    width: '93%',
+    marginLeft: 18,
     display: 'flex',
   },
 
