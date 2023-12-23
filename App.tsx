@@ -1,9 +1,8 @@
 import {StyleSheet, View} from 'react-native';
 import Welcome from './components/Welcome';
 import {useEffect, useState} from 'react';
-import MainPage from './components/MainPage';
 import Footer from './components/Footer';
-import Basket from './components/Basket';
+import AppNavigator from './components/AppNavigator';
 
 function App(): React.JSX.Element {
   const [welcome, setWelcome] = useState<boolean>(false);
@@ -17,9 +16,8 @@ function App(): React.JSX.Element {
   }, []);
 
   return (
-    <View style={styles.main}>
-      {welcome ? <MainPage /> : <Welcome />}
-      <Basket />
+    <View style={{flex: 1}}>
+      {welcome ? <AppNavigator /> : <Welcome />}
       <Footer />
     </View>
   );
