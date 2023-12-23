@@ -1,13 +1,26 @@
-import {Image, StyleSheet, View} from 'react-native';
+import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import type {NavigationProp} from '@react-navigation/native';
+import {RootStackParamList} from '../type';
 
-const Footer = (): JSX.Element => {
+const Footer = ({
+  navigation,
+}: {
+  navigation: NavigationProp<RootStackParamList>;
+}): JSX.Element | null => {
   return (
     <View style={styles.footerWrapper}>
-      <Image style={styles.home} source={require('../assets/Home.png')} />
-      <Image style={styles.home} source={require('../assets/Bag2.png')} />
+      <TouchableOpacity onPress={() => navigation.navigate('MainPage')}>
+        <Image style={styles.home} source={require('../assets/Home.png')} />
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Basket')}>
+        <Image style={styles.home} source={require('../assets/Bag2.png')} />
+      </TouchableOpacity>
     </View>
   );
 };
+
+// ...styles remain the same
 
 const styles = StyleSheet.create({
   footerWrapper: {
