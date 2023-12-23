@@ -9,8 +9,6 @@ import {
 import data from '../../data.json';
 
 const Categories = (): JSX.Element => {
-  console.log(data.coffee_categories);
-
   return (
     <ScrollView
       horizontal={true}
