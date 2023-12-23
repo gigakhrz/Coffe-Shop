@@ -2,6 +2,7 @@ import {StyleSheet, View} from 'react-native';
 import Welcome from './components/Welcome';
 import {useEffect, useState} from 'react';
 import MainPage from './components/MainPage';
+import Footer from './components/Footer';
 
 function App(): React.JSX.Element {
   const [welcome, setWelcome] = useState<boolean>(false);
@@ -15,7 +16,10 @@ function App(): React.JSX.Element {
   }, []);
 
   return (
-    <View style={styles.main}>{welcome ? <MainPage /> : <Welcome />}</View>
+    <View style={styles.main}>
+      {welcome ? <MainPage /> : <Welcome />}
+      <Footer></Footer>
+    </View>
   );
 }
 
