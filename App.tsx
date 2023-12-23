@@ -18,7 +18,7 @@ function App(): React.JSX.Element {
   return (
     <View style={styles.main}>
       {welcome ? <MainPage /> : <Welcome />}
-      <Footer></Footer>
+      <Footer />
     </View>
   );
 }
