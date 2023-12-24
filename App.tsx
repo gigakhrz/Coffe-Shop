@@ -3,6 +3,7 @@ import Welcome from './components/Welcome';
 import {useEffect, useState} from 'react';
 import Footer from './components/Footer';
 import AppNavigator from './components/AppNavigator';
+import {useNavigation} from '@react-navigation/native';
 
 function App(): React.JSX.Element {
   const [welcome, setWelcome] = useState<boolean>(false);
@@ -15,10 +16,12 @@ function App(): React.JSX.Element {
     return () => clearTimeout(timeOut);
   }, []);
 
+  const nativagion = useNavigation();
+
   return (
     <View style={{flex: 1}}>
       {welcome ? <AppNavigator /> : <Welcome />}
-      <Footer />
+      <Footer navigation={nativagion} />
     </View>
   );
 }
