@@ -1,7 +1,7 @@
 import {StyleSheet, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import Info from './firstHalfChilds/Info';
-import Search from './firstHalfChilds/Search';
+import Info from '../firstHalfChilds/Info';
+import Search from '../firstHalfChilds/Search';
 
 const FirstHalf = (): JSX.Element => {
   return (

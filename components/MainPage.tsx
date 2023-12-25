@@ -1,7 +1,7 @@
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import FirstHalf from './FirtsHalf';
-import SecondHelf from './SecondHelf';
+import FirstHalf from './mainPageChilds/FirtsHalf';
+import SecondHelf from './mainPageChilds/SecondHelf';
 
 const MainPage = (): JSX.Element => {
   return (
