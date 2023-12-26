@@ -1,5 +1,5 @@
 import {StyleSheet, View} from 'react-native';
-import Welcome from './components/Welcome';
+import Welcome from './components/mainPageChilds/Welcome';
 import {useEffect, useState} from 'react';
 import Footer from './components/Footer';
 import AppNavigator from './components/AppNavigator';
@@ -16,12 +16,11 @@ function App(): React.JSX.Element {
     return () => clearTimeout(timeOut);
   }, []);
 
-  const nativagion = useNavigation();
-
   return (
     <View style={{flex: 1}}>
       {welcome ? <AppNavigator /> : <Welcome />}
-      <Footer navigation={nativagion} />
+      {/* shevasworoot */}
+      <Footer />
     </View>
   );
 }
