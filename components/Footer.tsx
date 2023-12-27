@@ -3,13 +3,13 @@ import {useNavigation} from '@react-navigation/native';
 import type {NavigationProp} from '@react-navigation/native';
 import {RootStackParamList} from '../type';
 
-const Footer = ({navigation}: {navigation: any}): JSX.Element | null => {
+const Footer = (): JSX.Element | null => {
   return (
     <View style={styles.footerWrapper}>
-      <TouchableOpacity onPress={() => navigation.navigate('MainPage')}>
+      <TouchableOpacity>
         <Image style={styles.home} source={require('../assets/Home.png')} />
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Basket')}>
+      <TouchableOpacity>
         <Image style={styles.home} source={require('../assets/Bag2.png')} />
       </TouchableOpacity>
     </View>

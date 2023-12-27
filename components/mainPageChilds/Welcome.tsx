@@ -9,7 +9,7 @@ const Welcome = (): JSX.Element => {
       <ImageBackground
         resizeMode="contain"
         style={styles.image}
-        source={require('../assets/coffe.png')}>
+        source={require('../../assets/coffe.png')}>
         <View style={styles.textWrapper}>
           <Text style={styles.h1}>
             Coffee so good, your taste buds will love it.
