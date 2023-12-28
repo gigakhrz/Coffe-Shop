@@ -6,8 +6,6 @@ import Footer from './Footer';
 import {RootStackParamList} from '../type';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
-// type MainPagePros = NativeStackScreenProps<RootStackParamList, 'MainPage'>;
-
 const MainPage = (): JSX.Element => {
   return (
     <ScrollView style={styles.wrapper}>
