@@ -6,7 +6,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import data from '../../data.json';
+import data from '../../../data.json';
 
 const Categories = (): JSX.Element => {
   return (
