@@ -1,6 +1,6 @@
 import {PayloadAction, createSlice} from '@reduxjs/toolkit';
 
-interface CagatoryProps {
+export interface CagatoryProps {
   id: number;
 }
 
