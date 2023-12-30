@@ -7,8 +7,15 @@ import {
   View,
 } from 'react-native';
 import data from '../../data.json';
+import {useDispatch} from 'react-redux';
+import {setCategoryId} from '../../feature/categoryId';
 
 const Categories = (): JSX.Element => {
+  const dispatch = useDispatch();
+  // when user onpress category bar
+  const chooseCategory = (id: number): void => {
+    dispatch(setCategoryId(id));
+  };
   return (
     <ScrollView
       horizontal={true}
@@ -16,7 +23,9 @@ const Categories = (): JSX.Element => {
       style={styles.CategoriesWrapper}>
       {data.coffee_categories.map(item => {
         return (
-          <TouchableWithoutFeedback key={item.id}>
+          <TouchableWithoutFeedback
+            key={item.id}
+            onPress={() => chooseCategory(item.id)}>
             <View style={styles.category}>
               <Text style={styles.text}>{item.category}</Text>
             </View>
