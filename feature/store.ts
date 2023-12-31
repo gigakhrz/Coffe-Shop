@@ -10,3 +10,5 @@ const store = configureStore({
 export type RootState = {
   categoryId: CagatoryProps;
 };
+
+export default store;

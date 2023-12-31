@@ -7,8 +7,9 @@ import {
   View,
 } from 'react-native';
 import data from '../../data.json';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {setCategoryId} from '../../feature/categoryId';
+import {RootState} from '../../feature/store';
 
 const Categories = (): JSX.Element => {
   const dispatch = useDispatch();
@@ -16,6 +17,7 @@ const Categories = (): JSX.Element => {
   const chooseCategory = (id: number): void => {
     dispatch(setCategoryId(id));
   };
+
   return (
     <ScrollView
       horizontal={true}
