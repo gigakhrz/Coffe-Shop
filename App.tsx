@@ -9,6 +9,8 @@ import Basket from './components/Basket';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {RootStackParamList} from './type';
+import {Provider} from 'react-redux';
+import store from './feature/store';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -24,19 +26,21 @@ function App(): React.JSX.Element {
   }, []);
 
   return (
-    <View style={{flex: 1}}>
-      {welcome ? (
-        <NavigationContainer>
-          <Stack.Navigator initialRouteName="MainPage">
-            <Stack.Screen name="MainPage" component={MainPage} />
-            <Stack.Screen name="Basket" component={Basket} />
-          </Stack.Navigator>
-          <Footer />
-        </NavigationContainer>
-      ) : (
-        <Welcome />
-      )}
-    </View>
+    <Provider store={store}>
+      <View style={{flex: 1}}>
+        {welcome ? (
+          <NavigationContainer>
+            <Stack.Navigator initialRouteName="MainPage">
+              <Stack.Screen name="MainPage" component={MainPage} />
+              <Stack.Screen name="Basket" component={Basket} />
+            </Stack.Navigator>
+            <Footer />
+          </NavigationContainer>
+        ) : (
+          <Welcome />
+        )}
+      </View>
+    </Provider>
   );
 }
 

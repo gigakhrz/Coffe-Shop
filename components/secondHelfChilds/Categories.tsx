@@ -18,6 +18,10 @@ const Categories = (): JSX.Element => {
     dispatch(setCategoryId(id));
   };
 
+  const id = useSelector((srore: RootState) => srore.categoryId.id);
+
+  console.log(id);
+
   return (
     <ScrollView
       horizontal={true}
