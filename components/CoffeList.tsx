@@ -1,7 +1,5 @@
 import {StyleSheet} from 'react-native';
 
-// unda shemoimportes coffelistebi
-
 const CoffeList = (): JSX.Element => {
   return <></>;
 };
