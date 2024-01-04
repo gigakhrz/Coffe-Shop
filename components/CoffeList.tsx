@@ -10,4 +10,8 @@ const CoffeList = (): JSX.Element => {
 
 export default CoffeList;
 
-const style = StyleSheet.create({});
+const style = StyleSheet.create({
+  wrapper: {
+    flex: 1,
+  },
+});
