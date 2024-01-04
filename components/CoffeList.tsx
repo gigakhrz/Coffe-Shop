@@ -1,7 +1,11 @@
-import {ScrollView, StyleSheet} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 
 const CoffeList = (): JSX.Element => {
-  return <ScrollView></ScrollView>;
+  return (
+    <ScrollView>
+      <View></View>
+    </ScrollView>
+  );
 };
 
 export default CoffeList;
