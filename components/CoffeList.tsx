@@ -13,5 +13,6 @@ export default CoffeList;
 const style = StyleSheet.create({
   wrapper: {
     flex: 1,
+    alignItems: 'center',
   },
 });
