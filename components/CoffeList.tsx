@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import data from '../data.json';
 import {useSelector} from 'react-redux';
 import {RootState} from '../feature/store';
@@ -15,9 +15,8 @@ const CoffeList = (): JSX.Element => {
         return (
           <View style={styles.coffe} key={item.id}>
             <View>
-              <View>
-                <Text>{item.title}</Text>
-              </View>
+              <Image />
+              <Text style={styles.title}>{item.title}</Text>
             </View>
           </View>
         );
@@ -40,7 +39,18 @@ const styles = StyleSheet.create({
   },
 
   coffe: {
-    backgroundColor: 'red',
+    backgroundColor: 'white',
     width: 149,
+    padding: 5,
+    height: 238,
+  },
+
+  title: {
+    marginLeft: 7,
+  },
+
+  imageTitleWrapper: {
+    display: 'flex',
+    gap: 6,
   },
 });
