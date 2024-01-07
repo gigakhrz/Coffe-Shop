@@ -1,4 +1,4 @@
-import {ScrollView, StyleSheet, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import data from '../data.json';
 import {useSelector} from 'react-redux';
 import {RootState} from '../feature/store';
@@ -10,17 +10,34 @@ const CoffeList = (): JSX.Element => {
   const Coffe = data.coffee_categories.find(item => item.id === categoryId);
 
   return (
-    <ScrollView>
-      <View></View>
-    </ScrollView>
+    <View style={styles.wrapper}>
+      {Coffe?.coffees.map(item => {
+        return (
+          <View style={styles.coffe} key={item.id}>
+            <View>
+              <View></View>
+            </View>
+          </View>
+        );
+      })}
+    </View>
   );
 };
 
 export default CoffeList;
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   wrapper: {
-    flex: 1,
+    width: '100%',
     alignItems: 'center',
+    flexWrap: 'wrap',
+    rowGap: 5,
+    columnGap: 11,
+    paddingHorizontal: 38,
+  },
+
+  coffe: {
+    backgroundColor: 'red',
+    width: 149,
   },
 });
