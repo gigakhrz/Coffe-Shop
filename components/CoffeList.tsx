@@ -15,7 +15,9 @@ const CoffeList = (): JSX.Element => {
         return (
           <View style={styles.coffe} key={item.id}>
             <View>
-              <View></View>
+              <View>
+                <Text>{item.title}</Text>
+              </View>
             </View>
           </View>
         );
@@ -29,11 +31,12 @@ export default CoffeList;
 const styles = StyleSheet.create({
   wrapper: {
     width: '100%',
-    alignItems: 'center',
     flexWrap: 'wrap',
     rowGap: 5,
     columnGap: 11,
     paddingHorizontal: 38,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 
   coffe: {
