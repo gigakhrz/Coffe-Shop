@@ -1,4 +1,5 @@
 import {ScrollView, StyleSheet, View} from 'react-native';
+import data from '../data.json';
 
 const CoffeList = (): JSX.Element => {
   return (
