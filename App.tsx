@@ -30,8 +30,8 @@ function App(): React.JSX.Element {
       <View style={{flex: 1}}>
         {welcome ? (
           <NavigationContainer>
-            <Stack.Navigator initialRouteName="MainPage">
-              <Stack.Screen name="MainPage" component={MainPage} />
+            <Stack.Navigator initialRouteName="Home">
+              <Stack.Screen name="Home" component={MainPage} />
               <Stack.Screen name="Basket" component={Basket} />
             </Stack.Navigator>
             <Footer />

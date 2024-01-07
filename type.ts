@@ -1,4 +1,4 @@
 export type RootStackParamList = {
-  MainPage: undefined;
+  Home: undefined;
   Basket: undefined;
 };

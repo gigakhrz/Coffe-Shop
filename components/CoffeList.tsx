@@ -1,5 +1,7 @@
 import {ScrollView, StyleSheet, View} from 'react-native';
 import data from '../data.json';
+import {useSelector} from 'react-redux';
+import {RootState} from '@reduxjs/toolkit/query';
 
 const CoffeList = (): JSX.Element => {
   return (
