@@ -1,12 +1,14 @@
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import FirstHalf from './mainPageChilds/FirtsHalf';
 import SecondHelf from './mainPageChilds/SecondHelf';
+import CoffeList from './CoffeList';
 
 const MainPage = (): JSX.Element => {
   return (
     <ScrollView style={styles.wrapper}>
       <FirstHalf />
       <SecondHelf />
+      <CoffeList />
     </ScrollView>
   );
 };
