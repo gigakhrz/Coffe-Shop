@@ -8,14 +8,15 @@ const CoffeList = (): JSX.Element => {
 
   // filter
   const Coffe = data.coffee_categories.find(item => item.id === categoryId);
-
+ 
   return (
     <View style={styles.wrapper}>
       {Coffe?.coffees.map(item => {
+        console.log(item.image);
         return (
           <View style={styles.coffe} key={item.id}>
             <View>
-              <Image />
+              <Image source={require(`../assets/capuccino/${item.image}`)} />
               <Text style={styles.title}>{item.title}</Text>
             </View>
           </View>

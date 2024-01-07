@@ -8,28 +8,28 @@
           "id": 2,
           "title": "Classic Cappuccino",
           "price": 4.99,
-          "image": "classic_cappuccino.png",
+          "image": "1.png",
           "rating": 4.5
         },
         {
           "id": 3,
           "title": "Caramel Cappuccino",
           "price": 5.99,
-          "image": "caramel_cappuccino.png",
+          "image": "2.png",
           "rating": 4.7
         },
         {
           "id": 4,
           "title": "Hazelnut Cappuccino",
           "price": 5.49,
-          "image": "hazelnut_cappuccino.png",
+          "image": "3.png",
           "rating": 4.4
         },
         {
           "id": 5,
           "title": "Mocha Cappuccino",
           "price": 6.49,
-          "image": "mocha_cappuccino.png",
+          "image": "4.png",
           "rating": 4.8
         }
       ]
@@ -42,28 +42,28 @@
           "id": 7,
           "title": "Caramel Macchiato",
           "price": 5.99,
-          "image": "caramel_macchiato.png",
+          "image": "4.png",
           "rating": 4.6
         },
         {
           "id": 8,
           "title": "Vanilla Macchiato",
           "price": 5.49,
-          "image": "vanilla_macchiato.png",
+          "image": "4.png",
           "rating": 4.5
         },
         {
           "id": 9,
           "title": "Toffee Nut Macchiato",
           "price": 6.49,
-          "image": "toffee_nut_macchiato.png",
+          "image": "4.png",
           "rating": 4.9
         },
         {
           "id": 10,
           "title": "Chocolate Macchiato",
           "price": 6.99,
-          "image": "chocolate_macchiato.png",
+          "image": "4.png",
           "rating": 4.7
         }
       ]
@@ -76,28 +76,28 @@
           "id": 12,
           "title": "Vanilla Latte",
           "price": 4.99,
-          "image": "vanilla_latte.png",
+          "image": "4.png",
           "rating": 4.4
         },
         {
           "id": 13,
           "title": "Caramel Latte",
           "price": 5.49,
-          "image": "caramel_latte.png",
+          "image": "4.png",
           "rating": 4.8
         },
         {
           "id": 14,
           "title": "Hazelnut Latte",
           "price": 5.99,
-          "image": "hazelnut_latte.png",
+          "image": "4.png",
           "rating": 4.5
         },
         {
           "id": 15,
           "title": "White Chocolate Latte",
           "price": 6.49,
-          "image": "white_chocolate_latte.png",
+          "image": "4.png",
           "rating": 4.6
         }
       ]
@@ -110,28 +110,28 @@
           "id": 17,
           "title": "Classic Americano",
           "price": 3.99,
-          "image": "classic_americano.png",
+          "image": "4.png",
           "rating": 4.3
         },
         {
           "id": 18,
           "title": "Mint Americano",
           "price": 4.49,
-          "image": "mint_americano.png",
+          "image": "4.png",
           "rating": 4.7
         },
         {
           "id": 19,
           "title": "Cinnamon Americano",
           "price": 4.99,
-          "image": "cinnamon_americano.png",
+          "image": "4.png",
           "rating": 4.6
         },
         {
           "id": 20,
           "title": "Maple Americano",
           "price": 5.49,
-          "image": "maple_americano.png",
+          "image": "4.png",
           "rating": 4.5
         }
       ]
