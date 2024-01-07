@@ -1,7 +1,14 @@
 import {ScrollView, StyleSheet, View} from 'react-native';
 import data from '../data.json';
 import {useSelector} from 'react-redux';
-import {RootState} from '@reduxjs/toolkit/query';
+import {RootState} from '../feature/store';
+
+const categoryId = useSelector((store: RootState) => store.categoryId.id);
+
+// filter
+const Coffe = data.coffee_categories.filter(item => {
+  item.id === categoryId;
+});
 
 const CoffeList = (): JSX.Element => {
   return (
