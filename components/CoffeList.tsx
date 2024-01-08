@@ -9,6 +9,7 @@ const CoffeList = (): JSX.Element => {
   // filter
   const Coffe = data.coffee_categories.find(item => item.id === categoryId);
 
+  // require არის გასასწორებელი
   return (
     <View style={styles.wrapper}>
       {Coffe?.coffees.map(item => {
