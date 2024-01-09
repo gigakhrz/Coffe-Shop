@@ -17,7 +17,7 @@ const CoffeList = (): JSX.Element => {
         return (
           <View style={styles.coffe} key={item.id}>
             <View>
-              <Image source={require(`../assets/capuccino/1.png`)} />
+              <Image source={require(item.image)} />
               <Text style={styles.title}>{item.title}</Text>
             </View>
           </View>
