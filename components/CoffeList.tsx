@@ -9,6 +9,13 @@ const CoffeList = (): JSX.Element => {
   // filter
   const Coffe = data.coffee_categories.find(item => item.id === categoryId);
 
+  const imageMap = {
+    image1: require('../assets/capuccino/1.png'),
+    image2: require('../assets/capuccino/2.png'),
+    // ... other images
+    // try this
+  };
+
   return (
     <View style={styles.wrapper}>
       {Coffe?.coffees.map(item => {
