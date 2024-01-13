@@ -12,8 +12,6 @@ const CoffeList = (): JSX.Element => {
   const imageMap = {
     image1: require('../assets/capuccino/1.png'),
     image2: require('../assets/capuccino/2.png'),
-    // ... other images
-    // try this
   };
 
   return (
