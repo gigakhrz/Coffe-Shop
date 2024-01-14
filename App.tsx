@@ -34,7 +34,6 @@ function App(): React.JSX.Element {
               <Stack.Screen name="Home" component={MainPage} />
               <Stack.Screen name="Basket" component={Basket} />
             </Stack.Navigator>
-            <Footer />
           </NavigationContainer>
         ) : (
           <Welcome />

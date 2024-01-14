@@ -10,8 +10,13 @@ import data from '../../data.json';
 import {useDispatch, useSelector} from 'react-redux';
 import {setCategoryId} from '../../feature/categoryId';
 import {RootState} from '../../feature/store';
+import {useRoute} from '@react-navigation/native';
 
 const Categories = (): JSX.Element => {
+  const route = useRoute();
+
+  console.log(route.name);
+
   const dispatch = useDispatch();
   // when user onpress category bar
   const chooseCategory = (id: number): void => {
@@ -19,8 +24,6 @@ const Categories = (): JSX.Element => {
   };
 
   const id = useSelector((srore: RootState) => srore.categoryId.id);
-
-  console.log(id);
 
   return (
     <ScrollView

@@ -3,6 +3,7 @@ import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {RootStackParamList} from '../type';
 import {NavigationProp} from '@react-navigation/native';
+import {useRoute} from '@react-navigation/native';
 
 const Footer = (): JSX.Element | null => {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
