@@ -2,7 +2,6 @@ import React from 'react';
 import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {RootStackParamList} from '../type';
-
 import {NavigationProp} from '@react-navigation/native';
 
 const Footer = (): JSX.Element | null => {
@@ -10,7 +9,7 @@ const Footer = (): JSX.Element | null => {
 
   return (
     <View style={styles.footerWrapper}>
-      <TouchableOpacity onPress={() => navigation.navigate('MainPage')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Home')}>
         <Image style={styles.home} source={require('../assets/Home.png')} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Basket')}>
