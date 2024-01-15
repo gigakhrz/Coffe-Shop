@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 38,
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 25,
   },
 
   coffe: {
