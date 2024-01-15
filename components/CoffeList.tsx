@@ -1,4 +1,4 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import data from '../data.json';
 import {useSelector} from 'react-redux';
 import {RootState} from '../feature/store';
@@ -21,6 +21,9 @@ const CoffeList = (): JSX.Element => {
             </View>
             <View style={styles.priceWrapper}>
               <Text style={styles.price}>{`$ ${item.price}`}</Text>
+              <TouchableOpacity style={styles.button}>
+                <Image source={require('../assets/add.png')}></Image>
+              </TouchableOpacity>
             </View>
           </View>
         );
@@ -65,10 +68,23 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-start',
+    paddingHorizontal: 10,
+    justifyContent: 'space-between',
+    marginBottom: 10,
   },
 
   price: {
     fontSize: 18,
     color: '#2F4B4E',
+  },
+
+  button: {
+    width: 32,
+    height: 32,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#C67C4E',
+    borderRadius: 8,
   },
 });
