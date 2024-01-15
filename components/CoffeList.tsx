@@ -15,9 +15,12 @@ const CoffeList = (): JSX.Element => {
         console.log(item.image);
         return (
           <View style={styles.coffe} key={item.id}>
-            <View>
+            <View style={styles.imageTitleWrapper}>
               <Image source={require('../assets/capuccino/1.png')} />
               <Text style={styles.title}>{item.title}</Text>
+            </View>
+            <View style={styles.priceWrapper}>
+              <Text style={styles.price}>{`$ ${item.price}`}</Text>
             </View>
           </View>
         );
@@ -44,14 +47,28 @@ const styles = StyleSheet.create({
     width: 149,
     padding: 5,
     height: 238,
+    justifyContent: 'space-between',
   },
 
   title: {
     marginLeft: 7,
+    fontSize: 16,
+    color: '#2F2D2C',
   },
 
   imageTitleWrapper: {
     display: 'flex',
     gap: 6,
+  },
+
+  priceWrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+  },
+
+  price: {
+    fontSize: 18,
+    color: '#2F4B4E',
   },
 });
