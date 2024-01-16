@@ -1,7 +1,7 @@
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import data from '../data.json';
+import data from '../../data.json';
 import {useSelector} from 'react-redux';
-import {RootState} from '../feature/store';
+import {RootState} from '../../feature/store';
 
 const CoffeList = (): JSX.Element => {
   const categoryId = useSelector((store: RootState) => store.categoryId.id);
@@ -16,13 +16,13 @@ const CoffeList = (): JSX.Element => {
         return (
           <View style={styles.coffe} key={item.id}>
             <View style={styles.imageTitleWrapper}>
-              <Image source={require('../assets/capuccino/1.png')} />
+              <Image source={require('../../assets/capuccino/1.png')} />
               <Text style={styles.title}>{item.title}</Text>
             </View>
             <View style={styles.priceWrapper}>
               <Text style={styles.price}>{`$ ${item.price}`}</Text>
               <TouchableOpacity style={styles.button}>
-                <Image source={require('../assets/add.png')}></Image>
+                <Image source={require('../../assets/add.png')}></Image>
               </TouchableOpacity>
             </View>
           </View>
