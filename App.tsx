@@ -33,7 +33,6 @@ function App(): React.JSX.Element {
             <Stack.Navigator initialRouteName="Home">
               <Stack.Screen name="Home" component={MainPage} />
               <Stack.Screen name="Basket" component={Basket} />
-              <Stack.Screen name="footer" component={Footer} />
             </Stack.Navigator>
             <Footer />
           </NavigationContainer>
