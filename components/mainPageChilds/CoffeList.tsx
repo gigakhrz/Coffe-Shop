@@ -28,7 +28,10 @@ const CoffeList = (): JSX.Element => {
             <View style={styles.imageTitleWrapper}>
               <TouchableOpacity
                 onPress={() => navigation.navigate('Detail', {itemId})}>
-                <Image source={require('../../assets/capuccino/1.png')} />
+                <Image
+                  style={styles.image}
+                  source={require('../../assets/capuccino/1.png')}
+                />
               </TouchableOpacity>
               <Text style={styles.title}>{item.title}</Text>
             </View>
@@ -65,12 +68,18 @@ const styles = StyleSheet.create({
     padding: 5,
     height: 238,
     justifyContent: 'space-between',
+    borderRadius: 16,
   },
 
   title: {
     marginLeft: 7,
     fontSize: 16,
     color: '#2F2D2C',
+    fontWeight: '600',
+  },
+
+  image: {
+    borderRadius: 16,
   },
 
   imageTitleWrapper: {
