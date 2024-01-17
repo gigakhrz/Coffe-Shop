@@ -11,6 +11,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {RootStackParamList} from './type';
 import {Provider} from 'react-redux';
 import store from './feature/store';
+import Detail from './components/detailsChilds/Detail';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -33,6 +34,7 @@ function App(): React.JSX.Element {
             <Stack.Navigator initialRouteName="Home">
               <Stack.Screen name="Home" component={MainPage} />
               <Stack.Screen name="Basket" component={Basket} />
+              <Stack.Screen name="Detail" Component={Detail} />
             </Stack.Navigator>
             <Footer />
           </NavigationContainer>
