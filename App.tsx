@@ -34,7 +34,7 @@ function App(): React.JSX.Element {
             <Stack.Navigator initialRouteName="Home">
               <Stack.Screen name="Home" component={MainPage} />
               <Stack.Screen name="Basket" component={Basket} />
-              <Stack.Screen name="Detail" Component={Detail} />
+              <Stack.Screen name="Detail" component={Detail} />
             </Stack.Navigator>
             <Footer />
           </NavigationContainer>
