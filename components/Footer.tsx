@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import {StackActions, useNavigation} from '@react-navigation/native';
 import {RootStackParamList} from '../type';
 import {NavigationProp} from '@react-navigation/native';
 
@@ -9,7 +9,8 @@ const Footer = (): JSX.Element | null => {
 
   return (
     <View style={styles.footerWrapper}>
-      <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+      <TouchableOpacity
+        onPress={() => navigation.dispatch(StackActions.replace('Home'))}>
         <Image style={styles.home} source={require('../assets/Home.png')} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Basket')}>
