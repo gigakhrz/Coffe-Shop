@@ -6,9 +6,9 @@ import {useRoute} from '@react-navigation/native';
 import {useEffect} from 'react';
 
 const MainPage = (): JSX.Element => {
-  const route = useRoute();
-  const name = route.name;
-  useEffect(() => {}, []);
+  // const route = useRoute();
+  // const name = route.name;
+  // useEffect(() => {}, []);
   return (
     <ScrollView style={styles.wrapper}>
       <FirstHalf />
