@@ -11,12 +11,19 @@ import {useSelector} from 'react-redux';
 import {RootState} from '../../feature/store';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {RootStackParamList} from '../../type';
+import {useEffect} from 'react';
 
 const CoffeList = (): JSX.Element => {
   const categoryId = useSelector((store: RootState) => store.categoryId.id);
 
-  // filter
+  // filter category
   const Coffe = data.coffee_categories.find(item => item.id === categoryId);
+
+  //filter with title
+  const searchTitle = useSelector((store: RootState) => store.search.title);
+  useEffect(() => {
+    // filtris logica
+  }, [searchTitle]);
 
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (
