@@ -8,32 +8,36 @@
           "id": 2,
           "title": "Classic Cappuccino",
           "price": 4.99,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://img.freepik.com/premium-photo/top-view-hot-coffee-cappuccino-latte-art-isolated-white-background_158502-316.jpg?w=996",
           "description": "A classic cappuccino is a harmonious blend of espresso, steamed milk, and velvety microfoam. This iconic Italian coffee creation captivates the senses with a rich, bold espresso base, topped with a luscious layer of frothy milk that balances the intensity of the coffee. Served in a small cup, the cappuccino is a timeless indulgence, celebrated for its perfect marriage of strong flavors and creamy texture.",
+          "shortDescription": "A classic cappuccino is a harmonious blend of espresso, steamed milk, and velvety microfoam. This iconic Italian coffee creation captivates the senses with a rich, bold espresso base, topped with a luscious layer of frothy milk that balances the intensity of the coffee.",
           "rating": 4.5
         },
         {
           "id": 3,
           "title": "Caramel Cappuccino",
           "price": 5.99,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://thumbs.dreamstime.com/b/top-view-hot-coffee-latte-art-caramel-macchiato-isolated-white-background-path-clipping-included-98309826.jpg",
           "description": "A Caramel Cappuccino is a delightful fusion of robust espresso, steamed milk, and a decadent swirl of caramel syrup. This indulgent blend marries the boldness of coffee with a velvety texture, while the sweet caramel adds a touch of luxury to every sip. It's a delicious and comforting twist on the classic cappuccino, perfect for those who crave a harmonious balance of rich flavors and sweetness in their coffee.",
+          "shortDescription": "A Caramel Cappuccino is a delightful fusion of robust espresso, steamed milk, and a decadent swirl of caramel syrup.",
           "rating": 4.7
         },
         {
           "id": 4,
           "title": "Hazelnut Cappuccino",
           "price": 5.49,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://www.pngall.com/wp-content/uploads/3/Top-View-Cappuccino-PNG-Clipart.png",
           "description": "The Hazelnut Cappuccino is a luscious blend of espresso, steamed milk, and the inviting essence of hazelnut. Enjoy the rich harmony of bold coffee and nutty sweetness in every sip, topped with velvety microfoam. It's a delightful twist on the classic cappuccino, adding warmth and indulgence to your coffee experience.",
+          "shortDescription": "The Hazelnut Cappuccino is a luscious blend of espresso, steamed milk, and the inviting essence of hazelnut.",
           "rating": 4.4
         },
         {
           "id": 5,
           "title": "Flavored Cappuccino",
           "price": 6.49,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://png.pngtree.com/png-vector/20231102/ourmid/pngtree-a-cup-of-cappuccino-with-christmas-tree-latte-art-png-image_10357696.png",
           "description": "The Flavored Cappuccino is a delightful twist on the classic espresso and steamed milk combination, infused with tempting flavors like vanilla, caramel, or hazelnut. Each sip offers a harmonious blend of robust coffee and the chosen flavor, topped with creamy microfoam. This cappuccino provides a unique and indulgent experience, perfect for those seeking a touch of flair in their coffee ritual.",
+          "shortDescription": "The Flavored Cappuccino is a delightful twist on the classic espresso and steamed milk combination, infused with tempting flavors like vanilla, caramel, or hazelnut. ",
           "rating": 4.8
         }
       ]
@@ -46,32 +50,36 @@
           "id": 7,
           "title": "Caramel Macchiato",
           "price": 5.99,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://media.istockphoto.com/id/901577982/photo/top-view-of-hot-coffee-caramel-macchiato-cappuccino-cup-isolated-on-white-background-clipping.jpg?s=612x612&w=0&k=20&c=vn_Xr2iVgmVBzH4X1prg8WUZXXqPJtCaSzJk4VzGWqs=",
           "description": "The Caramel Macchiato is a tantalizing coffee creation featuring a perfect harmony of espresso, steamed milk, and a drizzle of sweet caramel. The bold espresso is complemented by velvety steamed milk, with the caramel adding a luscious touch of sweetness. This layered concoction showcases a beautiful presentation, with the caramel gently staining the creamy surface. A Caramel Macchiato is a luxurious and visually appealing coffee indulgence that effortlessly balances rich coffee flavors with the allure of caramel sweetness.",
+          "shortDescription": "The Caramel Macchiato is a tantalizing coffee creation featuring a perfect harmony of espresso, steamed milk, and a drizzle of sweet caramel.",
           "rating": 4.6
         },
         {
           "id": 8,
           "title": "Vanilla Macchiato",
           "price": 5.49,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://thumbs.dreamstime.com/b/hot-coffee-caramel-macchiato-espresso-dash-frothy-steamed-milk-vanilla-syrup-topped-ceramic-cup-top-view-isolated-164245449.jpg",
           "description": "A Vanilla Macchiato is a sweet and creamy espresso drink featuring vanilla syrup. Topped with frothy milk, it offers a perfect balance of bold coffee and comforting sweetness.",
+          "shortDescription": "A Vanilla Macchiato is a sweet and creamy espresso drink featuring vanilla syrup.",
           "rating": 4.5
         },
         {
           "id": 9,
           "title": "Toffee Nut Macchiato",
           "price": 6.49,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://thumbs.dreamstime.com/b/top-view-hot-coffee-latte-art-caramel-macchiato-isolated-white-background-path-clipping-included-98309826.jpg",
           "description": "A Toffee Nut Macchiato is a delightful espresso-based beverage infused with the rich and nutty flavor of toffee. This sweet and aromatic drink combines bold espresso with steamed milk, creating a velvety texture. Topped with a drizzle of toffee nut syrup, it delivers a perfect harmony of espresso intensity and sweet, nutty undertones for a truly indulgent experience.",
+          "shortDescription": "A Toffee Nut Macchiato is a delightful espresso-based beverage infused with the rich and nutty flavor of toffee.",
           "rating": 4.9
         },
         {
           "id": 10,
           "title": "Chocolate Macchiato",
           "price": 6.99,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://us.123rf.com/450wm/ketmut/ketmut2210/ketmut221000036/192891933-cup-of-coffee-with-milk-and-chocolate-cappuccino-with-cinnamon-macchiato-cocoa-top-view-easy-to-edit.jpg",
           "description": "A Chocolate Macchiato is a decadent espresso drink featuring the perfect blend of rich chocolate and bold coffee. Steamed milk adds a creamy texture, while a drizzle of chocolate syrup crowns the beverage. This delightful combination creates a luscious and indulgent flavor profile, making the Chocolate Macchiato a delicious treat for those who enjoy the harmony of coffee and chocolate.",
+          "shortDescription": "A Chocolate Macchiato is a decadent espresso drink featuring the perfect blend of rich chocolate and bold coffee.",
           "rating": 4.7
         }
       ]
@@ -84,32 +92,36 @@
           "id": 12,
           "title": "Vanilla Latte",
           "price": 4.99,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://png.pngtree.com/png-vector/20231102/ourmid/pngtree-a-cup-of-cappuccino-with-christmas-tree-latte-art-png-image_10357696.png",
           "description": "A Vanilla Latte is a classic and comforting coffee beverage made with smooth espresso, steamed milk, and a hint of sweet vanilla syrup. The rich espresso is balanced by the creamy texture of the milk, while the addition of vanilla syrup imparts a subtle and delightful sweetness. This popular and well-loved drink offers a perfect harmony of flavors, making it a go-to choice for those seeking a smooth and mildly sweet coffee experience.",
+          "shortDescription": "A Vanilla Latte is a classic and comforting coffee beverage made with smooth espresso, steamed milk, and a hint of sweet vanilla syrup.",
           "rating": 4.4
         },
         {
           "id": 13,
           "title": "Caramel Latte",
           "price": 5.49,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://thumbs.dreamstime.com/b/top-view-hot-coffee-latte-art-caramel-macchiato-isolated-white-background-path-clipping-included-98309826.jpg",
           "description": "A Caramel Latte is a delicious coffee treat featuring espresso, steamed milk, and a luscious caramel syrup. The robust espresso is complemented by the velvety texture of steamed milk, and the sweet caramel syrup adds a rich and indulgent flavor. This popular beverage strikes a perfect balance between the boldness of coffee and the sweetness of caramel, making it a delightful choice for those who enjoy a harmonious blend of flavors in their coffee.",
+          "shortDescription": "A Caramel Latte is a delicious coffee treat featuring espresso, steamed milk, and a luscious caramel syrup.",
           "rating": 4.8
         },
         {
           "id": 14,
           "title": "Hazelnut Latte",
           "price": 5.99,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://img.freepik.com/premium-photo/top-view-cup-coffee-latte_33900-5549.jpg",
           "description": "A Hazelnut Latte is a delightful coffee creation combining espresso, steamed milk, and the warm, nutty essence of hazelnut syrup. The robustness of the espresso pairs smoothly with the creamy steamed milk, while the addition of hazelnut syrup imparts a comforting and nutty flavor. This harmonious blend creates a satisfying and flavorful experience, making the Hazelnut Latte a popular choice for those who appreciate a touch of nuttiness in their coffee.",
+          "shortDescription": "A Hazelnut Latte is a delightful coffee creation combining espresso, steamed milk, and the warm, nutty essence of hazelnut syrup.",
           "rating": 4.5
         },
         {
           "id": 15,
           "title": "White Chocolate Latte",
           "price": 6.49,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://img.freepik.com/premium-photo/top-view-latte-art-coffee-white-background_33900-5429.jpg",
           "description": "A White Chocolate Latte is a luxurious coffee beverage that melds rich espresso with creamy steamed milk and the sweet, velvety notes of white chocolate. The espresso provides a bold foundation, while the steamed milk adds a smooth texture. The addition of white chocolate syrup brings a delightful sweetness, creating a harmonious and indulgent flavor profile. This popular latte variation is perfect for those who enjoy a decadent twist on their coffee experience.",
+          "shortDescription": "A White Chocolate Latte is a luxurious coffee beverage that melds rich espresso with creamy steamed milk and the sweet, velvety notes of white chocolate.",
           "rating": 4.6
         }
       ]
@@ -122,32 +134,36 @@
           "id": 17,
           "title": "Classic Americano",
           "price": 3.99,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://png.pngtree.com/png-vector/20191027/ourlarge/pngtree-coffee-cup-vector-top-view-hot-americano-coffee-espresso-fast-food-png-image_1887885.jpg",
           "description": "A Classic Americano is a simple yet robust coffee drink made by diluting a shot of espresso with hot water. This results in a bold and full-bodied cup of coffee, akin to drip coffee but with the distinctive espresso strength. The Americano retains the rich flavor of espresso while offering a milder taste, making it an ideal choice for those who appreciate a straightforward and strong coffee experience.",
+          "shortDescription": "A Classic Americano is a simple yet robust coffee drink made by diluting a shot of espresso with hot water.",
           "rating": 4.3
         },
         {
           "id": 18,
           "title": "Mint Americano",
           "price": 4.49,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://img.freepik.com/premium-photo/cup-coffee-is-shown-top-view-isolated-white-background_410516-20340.jpg?w=360",
           "description": "A Mint Americano is a refreshing twist on the classic Americano. This invigorating coffee drink is created by combining a shot of espresso with hot water and a touch of mint syrup. The result is a harmonious blend of bold coffee flavor, subtle minty freshness, and a hint of sweetness. This unique variation provides a cooling sensation, making it a delightful choice for those who enjoy a mint-infused and revitalizing coffee experience.",
+          "shortDescription": "A Mint Americano is a refreshing twist on the classic Americano. This invigorating coffee drink is created by combining a shot of espresso with hot water and a touch of mint syrup.",
           "rating": 4.7
         },
         {
           "id": 19,
           "title": "Cinnamon Americano",
           "price": 4.99,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://t4.ftcdn.net/jpg/05/69/90/07/360_F_569900749_yLgjVp0MMgS7SdZ1NLaVTky0tOOWz8Sa.jpg",
           "description": "A Cinnamon Americano is a flavorful variation of the classic Americano. It involves combining a shot of espresso with hot water and a dash of cinnamon syrup. This infusion adds a warm and aromatic dimension to the bold coffee, creating a delightful balance between the robust espresso and the subtle spiciness of cinnamon. The Cinnamon Americano offers a unique and comforting twist for those seeking a bit of spice in their coffee experience.",
+          "shortDescription": "A Cinnamon Americano is a flavorful variation of the classic Americano. It involves combining a shot of espresso with hot water and a dash of cinnamon syrup.",
           "rating": 4.6
         },
         {
           "id": 20,
           "title": "Maple Americano",
           "price": 5.49,
-          "image": "https://i.pinimg.com/564x/27/8c/ce/278cce576d61a4ad043b96bd3a247ede.jpg",
+          "image": "https://www.shutterstock.com/image-photo/black-coffee-cup-top-view-600nw-771758605.jpg",
           "description": "A Maple Americano is a delightful rendition of the classic Americano, featuring a shot of espresso mixed with hot water and a touch of sweet maple syrup. This unique blend offers a harmonious combination of bold coffee flavor and the natural sweetness of maple, creating a warm and comforting beverage. The Maple Americano provides a cozy and slightly sweet twist for those who enjoy a touch of natural sweetness in their coffee.",
+          "shortDescription": "A Maple Americano is a delightful rendition of the classic Americano, featuring a shot of espresso mixed with hot water and a touch of sweet maple syrup.",
           "rating": 4.5
         }
       ]
