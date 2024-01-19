@@ -1,6 +1,9 @@
 import {Image, StyleSheet, TextInput, View} from 'react-native';
+import {useDispatch} from 'react-redux';
+import {setTitle} from '../../feature/searchTitleSlice';
 
 const Search = (): JSX.Element => {
+  const dispatch = useDispatch();
   return (
     <View style={styles.searchWrapper}>
       <View style={styles.inputWrapper}>
@@ -9,6 +12,7 @@ const Search = (): JSX.Element => {
           source={require('../../assets/search.png')}
         />
         <TextInput
+          onChangeText={text => dispatch(setTitle(text))}
           style={styles.input}
           placeholderTextColor="#989898"
           placeholder="Search coffee"
