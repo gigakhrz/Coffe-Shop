@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import data from '../../data.json';
 import {useDispatch, useSelector} from 'react-redux';
-import {setCategoryId} from '../../feature/categoryId';
+import {setCategoryId} from '../../feature/categoryIdSlice';
 import {RootState} from '../../feature/store';
 import {useRoute} from '@react-navigation/native';
 

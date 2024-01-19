@@ -1,6 +1,6 @@
 import {PayloadAction, createSlice} from '@reduxjs/toolkit';
 
-interface TitleProps {
+export interface TitleProps {
   title: string;
 }
 
@@ -8,7 +8,7 @@ const initialState = {
   title: '',
 };
 
-const searchTite = createSlice({
+const searchTitle = createSlice({
   name: 'search',
   initialState,
   reducers: {
@@ -18,5 +18,5 @@ const searchTite = createSlice({
   },
 });
 
-export const {setTitle} = searchTite.actions;
-export default searchTite.reducer;
+export const {setTitle} = searchTitle.actions;
+export default searchTitle.reducer;
