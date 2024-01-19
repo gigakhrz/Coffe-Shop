@@ -15,15 +15,7 @@ import {useRoute} from '@react-navigation/native';
 const Categories = (): JSX.Element => {
   const route = useRoute();
 
-  console.log(route.name);
-
   const dispatch = useDispatch();
-  // when user onpress category bar
-  const chooseCategory = (id: number): void => {
-    dispatch(setCategoryId(id));
-  };
-
-  const id = useSelector((srore: RootState) => srore.categoryId.id);
 
   return (
     <ScrollView
@@ -34,7 +26,7 @@ const Categories = (): JSX.Element => {
         return (
           <TouchableWithoutFeedback
             key={item.id}
-            onPress={() => chooseCategory(item.id)}>
+            onPress={() => dispatch(setCategoryId(item.id))}>
             <View style={styles.category}>
               <Text style={styles.text}>{item.category}</Text>
             </View>
