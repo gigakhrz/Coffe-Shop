@@ -8,8 +8,6 @@ import {
 } from 'react-native';
 
 const Search = (): JSX.Element => {
-  const [openSort, setOpenSort] = useState<boolean>(false);
-
   return (
     <View style={styles.searchWrapper}>
       <View style={styles.inputWrapper}>
@@ -24,12 +22,6 @@ const Search = (): JSX.Element => {
           underlineColorAndroid="#525252"
         />
       </View>
-      <TouchableOpacity
-        onPress={() => {
-          setOpenSort(!openSort);
-        }}>
-        <Image source={require('../../assets/sorting.png')} />
-      </TouchableOpacity>
     </View>
   );
 };
