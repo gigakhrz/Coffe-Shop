@@ -22,7 +22,7 @@ const CoffeList = (): JSX.Element => {
   //filter with title
   const searchTitle = useSelector((store: RootState) => store.search.title);
   useEffect(() => {
-    // filtris logica
+    // filtris logica //////
   }, [searchTitle]);
 
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
