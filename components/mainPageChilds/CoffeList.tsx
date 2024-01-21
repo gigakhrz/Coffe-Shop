@@ -32,10 +32,17 @@ const CoffeList = (): JSX.Element => {
     dispatch(setFilteredCoffes(filtered || []));
   }, [coffe, searchTitle]);
 
+  // filtered coffes state, to map it.
+  const filteredCoffes = useSelector(
+    (store: RootState) => store.filteredCoffe.filteredCoffe,
+  );
+
+  console.log(filteredCoffes);
+
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (
     <View style={styles.wrapper}>
-      {coffe?.coffees.map(item => {
+      {filteredCoffes.map(item => {
         const itemId = item.id;
         return (
           <View style={styles.coffe} key={item.id}>
