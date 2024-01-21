@@ -30,7 +30,7 @@ const CoffeList = (): JSX.Element => {
     );
 
     dispatch(setFilteredCoffes(filtered || []));
-  }, [searchTitle]);
+  }, [coffe, searchTitle]);
 
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (
