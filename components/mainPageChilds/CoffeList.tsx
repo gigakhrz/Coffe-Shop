@@ -7,28 +7,35 @@ import {
   View,
 } from 'react-native';
 import data from '../../data.json';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../../feature/store';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {RootStackParamList} from '../../type';
 import {useEffect} from 'react';
+import {setFilteredCoffes} from '../../feature/filteredCoffesSlice';
 
 const CoffeList = (): JSX.Element => {
   const categoryId = useSelector((store: RootState) => store.categoryId.id);
 
-  // filter category
-  const Coffe = data.coffee_categories.find(item => item.id === categoryId);
+  const dispatch = useDispatch();
 
-  //filter with title
+  // filter category
+  const coffe = data.coffee_categories.find(item => item.id === categoryId);
+
+  //filter with title, this usefect filtering the coffe data every time when searchtitle will change.
   const searchTitle = useSelector((store: RootState) => store.search.title);
   useEffect(() => {
-    // filtris logica //////
+    const filtered = coffe?.coffees.filter(coffe =>
+      coffe.title.toLowerCase().includes(searchTitle.toLowerCase()),
+    );
+
+    dispatch(setFilteredCoffes(filtered || []));
   }, [searchTitle]);
 
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (
     <View style={styles.wrapper}>
-      {Coffe?.coffees.map(item => {
+      {coffe?.coffees.map(item => {
         const itemId = item.id;
         return (
           <View style={styles.coffe} key={item.id}>
