@@ -37,8 +37,6 @@ const CoffeList = (): JSX.Element => {
     (store: RootState) => store.filteredCoffe.filteredCoffe,
   );
 
-  console.log(filteredCoffes);
-
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (
     <View style={styles.wrapper}>
