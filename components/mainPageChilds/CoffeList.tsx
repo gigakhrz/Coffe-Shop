@@ -45,6 +45,10 @@ const CoffeList = (): JSX.Element => {
         const itemId = item.id;
         return (
           <View style={styles.coffe} key={item.id}>
+            <View style={styles.rateWrapper}>
+              <Image source={require('../../assets/star.png')} />
+              <Text>{item.rating}</Text>
+            </View>
             <View style={styles.imageTitleWrapper}>
               <TouchableOpacity
                 onPress={() => navigation.navigate('Detail', {itemId})}>
@@ -93,6 +97,18 @@ const styles = StyleSheet.create({
     height: 238,
     justifyContent: 'space-between',
     borderRadius: 16,
+    position: 'relative',
+  },
+
+  rateWrapper: {
+    left: 5,
+    top: 10,
+    position: 'absolute',
+    display: 'flex',
+    flexDirection: 'row',
+    zIndex: 3,
+    alignItems: 'center',
+    gap: 5,
   },
 
   title: {
