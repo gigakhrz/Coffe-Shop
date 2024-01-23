@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     width: 149,
     padding: 5,
-    height: 238,
+    height: 218,
     justifyContent: 'space-between',
     borderRadius: 16,
     position: 'relative',
