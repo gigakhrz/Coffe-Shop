@@ -12,7 +12,7 @@ const basketProductsSlice = createSlice({
   name: 'basketProducts',
   initialState,
   reducers: {
-    setProducts: (state, action: PayloadAction<number>) => {
+    setBasketProducts: (state, action: PayloadAction<number>) => {
       const productId = action.payload;
       if (state.products.includes(productId)) {
         state.products;
@@ -23,5 +23,5 @@ const basketProductsSlice = createSlice({
   },
 });
 
-export const {setProducts} = basketProductsSlice.actions;
+export const {setBasketProducts} = basketProductsSlice.actions;
 export default basketProductsSlice.reducer;
