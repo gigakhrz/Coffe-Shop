@@ -59,7 +59,9 @@ const CoffeList = (): JSX.Element => {
             </View>
             <View style={styles.priceWrapper}>
               <Text style={styles.price}>{`$ ${item.price}`}</Text>
-              <TouchableOpacity style={styles.button}>
+              <TouchableOpacity
+                onPress={() => dispatch(setBasketProducts(item.id))}
+                style={styles.button}>
                 <Image source={require('../../assets/add.png')}></Image>
               </TouchableOpacity>
             </View>
