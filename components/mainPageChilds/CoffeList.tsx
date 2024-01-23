@@ -13,6 +13,7 @@ import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {RootStackParamList} from '../../type';
 import {useEffect} from 'react';
 import {setFilteredCoffes} from '../../feature/filteredCoffesSlice';
+import {setBasketProducts} from '../../feature/basketProductsSlice';
 
 const CoffeList = (): JSX.Element => {
   const categoryId = useSelector((store: RootState) => store.categoryId.id);
