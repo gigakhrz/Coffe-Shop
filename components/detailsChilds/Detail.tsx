@@ -28,7 +28,8 @@ export default Detail;
 const styles = StyleSheet.create({
   detailWrapper: {
     width: '100%',
-    backgroundColor: '#F9F9F9',
+    height: '100%',
+    backgroundColor: 'white',
     paddingHorizontal: 20,
   },
 });
