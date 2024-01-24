@@ -43,7 +43,6 @@ const CoffeInfo = ({image, title, rate}: CoffeInfoProps): JSX.Element => {
 
 const styles = StyleSheet.create({
   wrapper: {
-    flex: 1,
     gap: 20,
   },
 

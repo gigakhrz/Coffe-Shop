@@ -12,11 +12,12 @@ export default function Description({
 }: DescriptionProps) {
   const [readMore, setReadMore] = useState<boolean>(false);
   return (
-    <View>
-      <Text>Description</Text>
-      <Text>
+    <View style={styles.wrapper}>
+      <Text style={styles.title}>Description</Text>
+      <Text style={styles.description}>
         {readMore ? description : shortDescription}{' '}
         <Text
+          style={styles.readMore}
           onPress={() => {
             setReadMore(!readMore);
           }}>
@@ -27,4 +28,28 @@ export default function Description({
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  wrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+    gap: 15,
+  },
+
+  title: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#2F2D2C',
+  },
+
+  description: {
+    fontSize: 14,
+    fontWeight: '400',
+    lineHeight: 23,
+    color: '#9B9B9B',
+  },
+
+  readMore: {
+    color: '#C67C4E',
+  },
+});
