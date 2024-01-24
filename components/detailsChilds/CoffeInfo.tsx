@@ -36,6 +36,7 @@ const CoffeInfo = ({image, title, rate}: CoffeInfoProps): JSX.Element => {
           </View>
         </View>
       </View>
+      <View style={styles.line} />
     </View>
   );
 };
@@ -56,8 +57,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%',
-    height: 65,
     flexDirection: 'row',
+    marginBottom: 20,
   },
 
   titleRateWraper: {
@@ -111,6 +112,12 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
     tintColor: 'brown',
+  },
+
+  line: {
+    height: 1,
+    width: '100%',
+    backgroundColor: '#EAEAEA',
   },
 });
 
