@@ -4,6 +4,7 @@ import {RootStackParamList} from '../../type';
 import data from '../../data.json';
 import CoffeInfo from './CoffeInfo';
 import Description from './Description';
+
 type DetailScreenRouteProp = RouteProp<RootStackParamList, 'Detail'>;
 
 const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
