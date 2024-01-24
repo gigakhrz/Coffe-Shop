@@ -25,4 +25,9 @@ const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
 
 export default Detail;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  detailWrapper: {
+    width: '100%',
+    backgroundColor: 'white',
+  },
+});
