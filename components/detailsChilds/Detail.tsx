@@ -13,7 +13,7 @@ const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
     .find(item => item.id === itemId);
 
   return (
-    <View>
+    <View style={styles.detailWrapper}>
       <CoffeInfo
         image={coffe?.image}
         title={coffe?.title}
@@ -28,6 +28,7 @@ export default Detail;
 const styles = StyleSheet.create({
   detailWrapper: {
     width: '100%',
-    backgroundColor: 'white',
+    backgroundColor: '#F9F9F9',
+    paddingHorizontal: 20,
   },
 });

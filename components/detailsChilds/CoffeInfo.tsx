@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 interface CoffeInfoProps {
   image: string | undefined;
@@ -7,7 +7,7 @@ interface CoffeInfoProps {
 }
 
 const CoffeInfo = ({image, title, rate}: CoffeInfoProps): JSX.Element => {
-  return <></>;
+  return <View></View>;
 };
 
 const styles = StyleSheet.create({});
