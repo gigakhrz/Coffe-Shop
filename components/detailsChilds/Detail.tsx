@@ -3,6 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import {RootStackParamList} from '../../type';
 import data from '../../data.json';
 import CoffeInfo from './CoffeInfo';
+import Description from './Description';
 type DetailScreenRouteProp = RouteProp<RootStackParamList, 'Detail'>;
 
 const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
@@ -18,6 +19,10 @@ const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
         image={coffe?.image}
         title={coffe?.title}
         rate={coffe?.rating}
+      />
+      <Description
+        description={coffe?.description}
+        shortDescription={coffe?.shortDescription}
       />
     </View>
   );
