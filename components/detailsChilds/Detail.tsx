@@ -14,7 +14,11 @@ const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
 
   return (
     <View>
-      <CoffeInfo />
+      <CoffeInfo
+        image={coffe?.image}
+        title={coffe?.title}
+        rate={coffe?.rating}
+      />
     </View>
   );
 };

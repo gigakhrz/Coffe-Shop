@@ -1,6 +1,12 @@
 import {StyleSheet} from 'react-native';
 
-const CoffeInfo = (): JSX.Element => {
+interface CoffeInfoProps {
+  image: string | undefined;
+  title: string | undefined;
+  rate: number | undefined;
+}
+
+const CoffeInfo = ({image, title, rate}: CoffeInfoProps): JSX.Element => {
   return <></>;
 };
 
