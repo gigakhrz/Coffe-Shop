@@ -110,6 +110,7 @@ const styles = StyleSheet.create({
   coffeMilk: {
     width: 20,
     height: 20,
+    tintColor: 'brown',
   },
 });
 
