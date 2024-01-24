@@ -21,7 +21,20 @@ const CoffeInfo = ({image, title, rate}: CoffeInfoProps): JSX.Element => {
             <Text style={styles.rate}>{rate}</Text>
           </View>
         </View>
-        <View></View>
+        <View style={styles.imageWrapper}>
+          <View style={styles.coffeImage}>
+            <Image
+              style={styles.coffeMilk}
+              source={require('../../assets/coffee-beans.png')}
+            />
+          </View>
+          <View style={styles.coffeImage}>
+            <Image
+              style={styles.coffeMilk}
+              source={require('../../assets/milk.png')}
+            />
+          </View>
+        </View>
       </View>
     </View>
   );
@@ -30,19 +43,21 @@ const CoffeInfo = ({image, title, rate}: CoffeInfoProps): JSX.Element => {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
-    backgroundColor: 'white',
+    gap: 20,
   },
 
   image: {
-    width: '100%',
+    width: 255,
     height: 226,
+    alignSelf: 'center',
   },
 
   textWrapper: {
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%',
-    height: 150,
+    height: 65,
+    flexDirection: 'row',
   },
 
   titleRateWraper: {
@@ -54,6 +69,7 @@ const styles = StyleSheet.create({
     color: '#2F2D2C',
     fontSize: 20,
     fontWeight: '600',
+    marginBottom: 15,
   },
 
   rateWrapper: {
@@ -72,6 +88,28 @@ const styles = StyleSheet.create({
     color: '#2F2D2C',
     fontSize: 16,
     fontWeight: '600',
+  },
+
+  imageWrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 15,
+    alignSelf: 'flex-end',
+  },
+
+  coffeImage: {
+    width: 44,
+    height: 44,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FFF0F0',
+    borderRadius: 15,
+  },
+
+  coffeMilk: {
+    width: 20,
+    height: 20,
   },
 });
 
