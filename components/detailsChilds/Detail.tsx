@@ -10,6 +10,7 @@ type DetailScreenRouteProp = RouteProp<RootStackParamList, 'Detail'>;
 const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
   const {itemId} = route.params;
 
+  // new array which contains all coffes without categories
   const coffe = data.coffee_categories
     .flatMap(category => category.coffees)
     .find(item => item.id === itemId);
