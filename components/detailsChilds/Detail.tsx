@@ -1,5 +1,5 @@
 import {RouteProp} from '@react-navigation/native';
-import {StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import {RootStackParamList} from '../../type';
 import data from '../../data.json';
 import CoffeInfo from './CoffeInfo';
@@ -16,7 +16,7 @@ const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
     .find(item => item.id === itemId);
 
   return (
-    <View style={styles.detailWrapper}>
+    <ScrollView style={styles.detailWrapper}>
       <CoffeInfo
         image={coffe?.image}
         title={coffe?.title}
@@ -26,7 +26,7 @@ const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
         description={coffe?.description}
         shortDescription={coffe?.shortDescription}
       />
-    </View>
+    </ScrollView>
   );
 };
 
