@@ -1,11 +1,21 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-
+import {useDispatch, useSelector} from 'react-redux';
+import {setBasketProducts} from '../../feature/basketProductsSlice';
+import {RootState} from '../../feature/store';
 interface BuyNowProps {
   itemId: number | undefined;
   price: number | undefined;
 }
 
 const BuyNow = ({itemId, price}: BuyNowProps): JSX.Element => {
+  const dispatch = useDispatch();
+  // ensure if itemId is not undefined and disptach it
+  const handleBuyNow = () => {
+    if (itemId !== undefined) {
+      dispatch(setBasketProducts(itemId));
+    }
+  };
+
   return (
     <View>
       <View style={styles.line} />
@@ -14,7 +24,7 @@ const BuyNow = ({itemId, price}: BuyNowProps): JSX.Element => {
           <Text style={styles.priceText}>Price</Text>
           <Text style={styles.priceNumber}>{price}</Text>
         </View>
-        <TouchableOpacity style={styles.touchable}>
+        <TouchableOpacity onPress={handleBuyNow} style={styles.touchable}>
           <Text style={styles.touchableText}>Buy Now</Text>
         </TouchableOpacity>
       </View>
@@ -36,6 +46,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginBottom: 10,
   },
 
   priceWrapper: {
