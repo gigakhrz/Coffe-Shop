@@ -20,8 +20,13 @@ const basketProductsSlice = createSlice({
         state.products.push(productId);
       }
     },
+
+    setDefaultProduct: (state, action: PayloadAction<number[]>) => {
+      state.products = action.payload;
+    },
   },
 });
 
-export const {setBasketProducts} = basketProductsSlice.actions;
+export const {setBasketProducts, setDefaultProduct} =
+  basketProductsSlice.actions;
 export default basketProductsSlice.reducer;

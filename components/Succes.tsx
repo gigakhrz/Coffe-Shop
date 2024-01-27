@@ -4,6 +4,7 @@ import {Image, StyleSheet, Text, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../feature/store';
 import {RootStackParamList} from '../type';
+import {setDefaultProduct} from '../feature/basketProductsSlice';
 
 // SuccessOrder component
 export default function SuccessOrder(): JSX.Element {
@@ -20,7 +21,7 @@ export default function SuccessOrder(): JSX.Element {
   useEffect(() => {
     const timeout = setTimeout(() => {
       navigation.navigate('Home');
-      //   dispatch(setDefaultProduct([]));
+      dispatch(setDefaultProduct([]));
     }, 3000);
 
     return () => clearTimeout(timeout);
