@@ -3,12 +3,14 @@ import {useRoute} from '@react-navigation/native';
 import {useEffect} from 'react';
 import SelectedProducts from './SelectedProducts';
 import data from '../../data.json';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../../feature/store';
 import BasketProducts from './BasketProducts';
+import {setCoffesQuantity} from '../../feature/coffeQuantitySlice';
 
 const Basket = (): JSX.Element => {
   const route = useRoute();
+  const dispatch = useDispatch();
 
   // protucts id that selected from user
   const selectedCoffes = useSelector(
@@ -19,6 +21,11 @@ const Basket = (): JSX.Element => {
   const basketItems = data.coffee_categories
     .flatMap(category => category.coffees)
     .filter(item => selectedCoffes.products.includes(item.id));
+
+  // this useState will create the coffes quantity's array
+  useEffect(() => {
+    dispatch(setCoffesQuantity(Array(basketItems.length).fill(1)));
+  }, [selectedCoffes]);
 
   return (
     <ScrollView
