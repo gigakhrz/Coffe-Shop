@@ -87,6 +87,8 @@ const styles = StyleSheet.create({
     color: '#2F2D2C',
     fontSize: 16,
     fontWeight: '600',
+    minWidth: 150,
+    maxWidth: 150,
   },
 
   countButtonsWrapper: {
