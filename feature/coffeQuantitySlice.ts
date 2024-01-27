@@ -1,5 +1,4 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {useSelector} from 'react-redux';
 
 export interface CoffeQuantityProps {
   coffesQuantity: number[];
@@ -15,12 +14,12 @@ const coffesQuantitySlice = createSlice({
   reducers: {
     increaseQuantity: (state, action: PayloadAction<number>) => {
       const index = action.payload;
-      state.coffesQuantity[index] + 1;
+      state.coffesQuantity[index] += 1;
     },
 
     recreaseQuantity: (state, action: PayloadAction<number>) => {
       const index = action.payload;
-      state.coffesQuantity[index] - 1;
+      state.coffesQuantity[index] -= 1;
     },
 
     setCoffesQuantity: (state, action: PayloadAction<number[]>) => {
