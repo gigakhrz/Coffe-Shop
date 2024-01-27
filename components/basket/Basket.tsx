@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     backgroundColor: '#F9F9F9',
+    gap: 20,
   },
 
   emptyView: {
