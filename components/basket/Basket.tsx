@@ -17,13 +17,13 @@ const Basket = (): JSX.Element => {
 
   // protucts id that selected from user
   const selectedCoffes = useSelector(
-    (store: RootState) => store.basketProducts,
+    (store: RootState) => store.basketProducts.products,
   );
 
   // filter data based on selectedCoffes array
   const basketItems = data.coffee_categories
     .flatMap(category => category.coffees)
-    .filter(item => selectedCoffes.products.includes(item.id));
+    .filter(item => selectedCoffes.includes(item.id));
 
   // this useState will create the coffes quantity's array
   useEffect(() => {

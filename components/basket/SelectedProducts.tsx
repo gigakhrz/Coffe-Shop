@@ -7,27 +7,47 @@ import {
   increaseQuantity,
   recreaseQuantity,
 } from '../../feature/coffeQuantitySlice';
+import {setRemoveProduct} from '../../feature/basketProductsSlice';
 
 interface selectedProdctsProps {
   index: number;
   title: string | undefined;
   image: string | undefined;
+  id: number;
 }
 
 const SelectedProducts = ({
   index,
   title,
   image,
+  id,
 }: selectedProdctsProps): JSX.Element => {
   const dispatch = useDispatch();
+
+  // protucts id that selected from user
+  const selectedCoffes = useSelector(
+    (store: RootState) => store.basketProducts.products,
+  );
 
   //   array of the quantities
   const quantities = useSelector(
     (store: RootState) => store.coffesQuantity.coffesQuantity,
   );
 
+  // to delte the coffe from basket
+  const handleRemoveItem = () => {
+    const itemIdToRemove = selectedCoffes[index]; // Use the individual item, not an array
+    dispatch(setRemoveProduct(itemIdToRemove));
+  };
   return (
     <View style={styles.wrapper}>
+      <TouchableOpacity onPress={handleRemoveItem}>
+        <Image
+          style={styles.trashImage}
+          source={require('../../assets/trash-can.png')}
+        />
+      </TouchableOpacity>
+
       <Image
         style={styles.image}
         source={{
@@ -66,8 +86,14 @@ const styles = StyleSheet.create({
     width: '100%',
     display: 'flex',
     flexDirection: 'row',
-    gap: 21,
+    gap: 11,
     height: 60,
+    alignItems: 'center',
+  },
+
+  trashImage: {
+    width: 20,
+    height: 20,
   },
 
   image: {
@@ -79,7 +105,7 @@ const styles = StyleSheet.create({
   nameCountWrapper: {
     display: 'flex',
     flexDirection: 'row',
-    gap: 41,
+    gap: 21,
     alignItems: 'center',
   },
 
