@@ -13,14 +13,29 @@ const Footer = (): JSX.Element | null => {
     (store: RootState) => store.basketProducts.products,
   );
 
+  const routeState = useSelector(
+    (store: RootState) => store.stateRoute.stateRoute,
+  );
+
   return (
     <View style={styles.footerWrapper}>
-      <TouchableOpacity
-        onPress={() => navigation.dispatch(StackActions.replace('Home'))}>
-        <Image style={styles.home} source={require('../assets/Home.png')} />
+      <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+        <Image
+          style={
+            (styles.home,
+            {tintColor: routeState === 'Home' ? '#C67C4E' : '#8D8D8D'})
+          }
+          source={require('../assets/Home.png')}
+        />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Basket')}>
-        <Image style={styles.home} source={require('../assets/Bag2.png')} />
+        <Image
+          style={
+            (styles.home,
+            {tintColor: routeState === 'Basket' ? '#C67C4E' : '#8D8D8D'})
+          }
+          source={require('../assets/Bag2.png')}
+        />
         <View
           style={[
             styles.amountOfCoffeeView,

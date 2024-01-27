@@ -3,7 +3,7 @@ import FirstHalf from './mainPageChilds/FirtsHalf';
 import SecondHelf from './mainPageChilds/SecondHelf';
 import CoffeList from './mainPageChilds/CoffeList';
 import {useFocusEffect, useRoute} from '@react-navigation/native';
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useDispatch} from 'react-redux';
 import {setRoute} from '../feature/routeSlice';
 
@@ -14,6 +14,7 @@ const MainPage = (): JSX.Element => {
   useFocusEffect(
     React.useCallback(() => {
       const name = route.name;
+      console.log(name);
       dispatch(setRoute(name));
     }, [route]),
   );
