@@ -2,11 +2,17 @@ import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../feature/store';
+import {
+  NavigationProp,
+  StackActions,
+  useNavigation,
+} from '@react-navigation/native';
+import {RootStackParamList} from '../../type';
 
 const OrderButton = () => {
   // the totalPrice state
   const totalPrice = useSelector((store: RootState) => store.totalPrice.price);
-
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (
     <View style={styles.addBasketView}>
       <View style={styles.lineStyle}>
@@ -27,7 +33,12 @@ const OrderButton = () => {
           </View>
           <Image source={require('../../assets/dots.png')} />
         </View>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => {
+            // Navigate to the 'Success' screen on button press
+            navigation.dispatch(StackActions.replace('Success'));
+          }}>
           <Text style={styles.text}> Order</Text>
         </TouchableOpacity>
       </View>

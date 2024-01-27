@@ -7,7 +7,7 @@ import {RootStackParamList} from '../type';
 import {setDefaultProduct} from '../feature/basketProductsSlice';
 
 // SuccessOrder component
-export default function SuccessOrder(): JSX.Element {
+export default function Success(): JSX.Element {
   // Access the navigation prop for navigating between screens
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   const dispatch = useDispatch();
@@ -30,7 +30,7 @@ export default function SuccessOrder(): JSX.Element {
   return (
     // Main container with success message and image
     <View style={styles.MainCont}>
-      <Image source={require('../assets/check.png')} />
+      <Image style={styles.image} source={require('../assets/check.png')} />
       <View style={styles.viewSuccess}>
         <Text style={styles.congratSuccess}>Congratulations!</Text>
         <Text style={styles.successText}>
@@ -71,5 +71,9 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '600',
     fontStyle: 'normal',
+  },
+  image: {
+    width: 50,
+    height: 50,
   },
 });

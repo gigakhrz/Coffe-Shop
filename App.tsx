@@ -12,7 +12,7 @@ import {Provider} from 'react-redux';
 import store from './feature/store';
 import Detail from './components/detailsChilds/Detail';
 import Basket from './components/basket/Basket';
-import SuccessOrder from './components/Succes';
+import Success from './components/Succes';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -37,8 +37,8 @@ function App(): React.JSX.Element {
               <Stack.Screen name="Basket" component={Basket} />
               <Stack.Screen name="Detail" component={Detail} />
               <Stack.Screen
-                name="Succes"
-                component={SuccessOrder}
+                name="Success"
+                component={Success}
                 options={{headerShown: false, headerBackVisible: false}}
               />
             </Stack.Navigator>
