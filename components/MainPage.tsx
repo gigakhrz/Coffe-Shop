@@ -22,6 +22,7 @@ export default MainPage;
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
+    backgroundColor: '#F9F9F9',
     display: 'flex',
     height: '100%',
   },
