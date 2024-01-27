@@ -16,29 +16,31 @@ const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
     .find(item => item.id === itemId);
 
   return (
-    <ScrollView style={styles.detailWrapper}>
-      <CoffeInfo
-        image={coffe?.image}
-        title={coffe?.title}
-        rate={coffe?.rating}
-      />
-      <Description
-        description={coffe?.description}
-        shortDescription={coffe?.shortDescription}
-      />
-    </ScrollView>
+    <View style={styles.wrapper}>
+      <ScrollView>
+        <CoffeInfo
+          image={coffe?.image}
+          title={coffe?.title}
+          rate={coffe?.rating}
+        />
+        <Description
+          description={coffe?.description}
+          shortDescription={coffe?.shortDescription}
+        />
+      </ScrollView>
+    </View>
   );
 };
 
 export default Detail;
 
 const styles = StyleSheet.create({
-  detailWrapper: {
+  wrapper: {
     width: '100%',
     height: '100%',
-    backgroundColor: 'white',
-    paddingHorizontal: 20,
     display: 'flex',
-    gap: 20,
+    gap: 12,
+    paddingHorizontal: 20,
+    backgroundColor: 'white',
   },
 });
