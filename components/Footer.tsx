@@ -21,10 +21,7 @@ const Footer = (): JSX.Element | null => {
     <View style={styles.footerWrapper}>
       <TouchableOpacity onPress={() => navigation.navigate('Home')}>
         <Image
-          style={
-            (styles.home,
-            {tintColor: routeState === 'Home' ? '#C67C4E' : '#8D8D8D'})
-          }
+          style={(styles.home, {tintColor: '#8D8D8D'})}
           source={require('../assets/Home.png')}
         />
       </TouchableOpacity>

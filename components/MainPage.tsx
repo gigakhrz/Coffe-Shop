@@ -8,16 +8,6 @@ import {useDispatch} from 'react-redux';
 import {setRoute} from '../feature/routeSlice';
 
 const MainPage = (): JSX.Element => {
-  const route = useRoute();
-  const dispatch = useDispatch();
-
-  useFocusEffect(
-    React.useCallback(() => {
-      const name = route.name;
-      console.log(name);
-      dispatch(setRoute(name));
-    }, [route]),
-  );
   return (
     <ScrollView style={styles.wrapper}>
       <FirstHalf />
