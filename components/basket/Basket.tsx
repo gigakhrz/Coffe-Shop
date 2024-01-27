@@ -8,6 +8,7 @@ import {RootState} from '../../feature/store';
 import BasketProducts from './BasketProducts';
 import {setCoffesQuantity} from '../../feature/coffeQuantitySlice';
 import PaymentSummary from './PaymentSummary';
+import Discount from './Discount';
 
 const Basket = (): JSX.Element => {
   const route = useRoute();
@@ -46,6 +47,7 @@ const Basket = (): JSX.Element => {
         <View style={styles.basketDiv}>
           <View style={styles.basktWrapper}>
             <BasketProducts basketItems={basketItems} />
+            <Discount />
             <PaymentSummary basketItems={basketItems} />
           </View>
         </View>

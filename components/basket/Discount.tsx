@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     gap: 15,
-    marginTop: 20,
+    marginBottom: 21,
   },
 
   line: {
