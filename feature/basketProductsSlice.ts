@@ -24,9 +24,17 @@ const basketProductsSlice = createSlice({
     setDefaultProduct: (state, action: PayloadAction<number[]>) => {
       state.products = action.payload;
     },
+
+    setRemoveProduct: (state, action: PayloadAction<number>) => {
+      const itemId = action.payload;
+
+      if (state.products.includes(itemId)) {
+        state.products = state.products.filter(id => id !== itemId);
+      }
+    },
   },
 });
 
-export const {setBasketProducts, setDefaultProduct} =
+export const {setBasketProducts, setDefaultProduct, setRemoveProduct} =
   basketProductsSlice.actions;
 export default basketProductsSlice.reducer;
