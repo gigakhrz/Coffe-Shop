@@ -1,9 +1,15 @@
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {CoffeData} from '../../type';
+import {useDispatch, useSelector} from 'react-redux';
+import {RootState} from '../../feature/store';
+import {
+  increaseQuantity,
+  recreaseQuantity,
+} from '../../feature/coffeQuantitySlice';
 
 interface selectedProdctsProps {
-  index: number | undefined;
+  index: number;
   title: string | undefined;
   image: string | undefined;
 }
@@ -13,6 +19,13 @@ const SelectedProducts = ({
   title,
   image,
 }: selectedProdctsProps): JSX.Element => {
+  const dispatch = useDispatch();
+
+  //   array of the quantities
+  const quantities = useSelector(
+    (store: RootState) => store.coffesQuantity.coffesQuantity,
+  );
+
   return (
     <View style={styles.wrapper}>
       <Image
@@ -25,11 +38,19 @@ const SelectedProducts = ({
       <View style={styles.nameCountWrapper}>
         <Text style={styles.name}>{title}</Text>
         <View style={styles.countButtonsWrapper}>
-          <TouchableOpacity style={styles.buttons}>
+          <TouchableOpacity
+            style={styles.buttons}
+            onPress={() => {
+              dispatch(recreaseQuantity(index));
+            }}>
             <View style={styles.minus}></View>
           </TouchableOpacity>
-          <Text>1</Text>
-          <TouchableOpacity style={styles.buttons}>
+          <Text>{quantities[index]}</Text>
+          <TouchableOpacity
+            style={styles.buttons}
+            onPress={() => {
+              dispatch(increaseQuantity(index));
+            }}>
             <Text style={styles.plus}>+</Text>
           </TouchableOpacity>
         </View>
