@@ -21,9 +21,8 @@ export default function Success(): JSX.Element {
   useEffect(() => {
     const timeout = setTimeout(() => {
       navigation.navigate('Home');
-      dispatch(setDefaultProduct([]));
     }, 3000);
-
+    dispatch(setDefaultProduct([]));
     return () => clearTimeout(timeout);
   }, []);
 
