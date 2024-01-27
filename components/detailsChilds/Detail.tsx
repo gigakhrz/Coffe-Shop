@@ -4,6 +4,7 @@ import {RootStackParamList} from '../../type';
 import data from '../../data.json';
 import CoffeInfo from './CoffeInfo';
 import Description from './Description';
+import BuyNow from './BuyNow';
 
 type DetailScreenRouteProp = RouteProp<RootStackParamList, 'Detail'>;
 
@@ -28,6 +29,7 @@ const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
           shortDescription={coffe?.shortDescription}
         />
       </ScrollView>
+      <BuyNow />
     </View>
   );
 };
