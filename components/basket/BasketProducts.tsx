@@ -29,7 +29,6 @@ export default BasketProducts;
 const styles = StyleSheet.create({
   wrapper: {
     width: '100%',
-    height: '100%',
     display: 'flex',
     gap: 10,
     marginTop: 20,

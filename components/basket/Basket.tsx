@@ -9,6 +9,7 @@ import BasketProducts from './BasketProducts';
 import {setCoffesQuantity} from '../../feature/coffeQuantitySlice';
 import PaymentSummary from './PaymentSummary';
 import Discount from './Discount';
+import OrderButton from './OrderButton';
 
 const Basket = (): JSX.Element => {
   const route = useRoute();
@@ -49,6 +50,7 @@ const Basket = (): JSX.Element => {
             <BasketProducts basketItems={basketItems} />
             <Discount />
             <PaymentSummary basketItems={basketItems} />
+            <OrderButton />
           </View>
         </View>
       )}
