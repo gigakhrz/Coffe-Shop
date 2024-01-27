@@ -10,8 +10,15 @@ interface BasketProductsProps {
 const BasketProducts = ({basketItems}: BasketProductsProps): JSX.Element => {
   return (
     <View style={styles.wrapper}>
-      {basketItems.map(coffe => {
-        return <SelectedProducts key={coffe.id} />;
+      {basketItems.map((coffe, index) => {
+        return (
+          <SelectedProducts
+            key={coffe.id}
+            index={index}
+            title={coffe.title}
+            image={coffe.image}
+          />
+        );
       })}
     </View>
   );

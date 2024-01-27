@@ -1,7 +1,18 @@
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
+import {CoffeData} from '../../type';
 
-const SelectedProducts = (): JSX.Element => {
+interface selectedProdctsProps {
+  index: number | undefined;
+  title: string | undefined;
+  image: string | undefined;
+}
+
+const SelectedProducts = ({
+  index,
+  title,
+  image,
+}: selectedProdctsProps): JSX.Element => {
   return (
     <View style={styles.wrapper}>
       <Image
@@ -12,7 +23,7 @@ const SelectedProducts = (): JSX.Element => {
       />
 
       <View style={styles.nameCountWrapper}>
-        <Text style={styles.name}>capucino hazelhut</Text>
+        <Text style={styles.name}></Text>
 
         <View style={styles.countButtonsWrapper}>
           <TouchableOpacity style={styles.buttons}>
