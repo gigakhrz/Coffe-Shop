@@ -7,6 +7,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../../feature/store';
 import BasketProducts from './BasketProducts';
 import {setCoffesQuantity} from '../../feature/coffeQuantitySlice';
+import PaymentSummary from './PaymentSummary';
 
 const Basket = (): JSX.Element => {
   const route = useRoute();
@@ -47,6 +48,7 @@ const Basket = (): JSX.Element => {
         <View style={styles.basketDiv}>
           <View style={styles.basktWrapper}>
             <BasketProducts basketItems={basketItems} />
+            <PaymentSummary basketItems={basketItems} />
           </View>
         </View>
       )}
