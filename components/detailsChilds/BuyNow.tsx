@@ -3,7 +3,10 @@ import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 const BuyNow = (): JSX.Element => {
   return (
     <View style={styles.wrapper}>
-      <View style={styles.priceWrapper}></View>
+      <View style={styles.priceWrapper}>
+        <Text>Price</Text>
+        <Text></Text>
+      </View>
       <TouchableOpacity>
         <Text>Buy Now</Text>
       </TouchableOpacity>
@@ -18,6 +21,7 @@ const styles = StyleSheet.create({
     width: '100%',
     display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'space-between',
   },
 
   priceWrapper: {
