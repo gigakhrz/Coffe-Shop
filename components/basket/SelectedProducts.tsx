@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     gap: 21,
-    alignItems: 'center',
+    height: 60,
   },
 
   image: {

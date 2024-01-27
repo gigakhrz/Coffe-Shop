@@ -32,8 +32,6 @@ const Basket = (): JSX.Element => {
     <ScrollView
       contentContainerStyle={{
         flexGrow: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
       }}
       style={styles.basktWrapper}>
       {basketItems.length < 1 ? (
@@ -70,6 +68,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     gap: 20,
+    marginTop: 150,
   },
 
   emptyText: {

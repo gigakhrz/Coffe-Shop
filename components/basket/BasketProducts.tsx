@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     display: 'flex',
-    gap: 15,
+    gap: 10,
+    marginTop: 20,
   },
 });
