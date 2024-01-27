@@ -3,8 +3,7 @@ import searchTitleSlice, {TitleProps} from './searchTitleSlice';
 import categoryIdSlice, {CagatoryProps} from './categoryIdSlice';
 import filteredCoffesSlice, {FilteredProps} from './filteredCoffesSlice';
 import basketProductsSlice, {BasketProductProps} from './basketProductsSlice';
-import {BaseBackgroundPropType} from 'react-native';
-import coffeQuantitySlice, {CoffeQuantity} from './coffeQuantitySlice';
+import coffeQuantitySlice, {CoffeQuantityProps} from './coffeQuantitySlice';
 
 const store = configureStore({
   reducer: {
@@ -21,7 +20,7 @@ export type RootState = {
   search: TitleProps;
   filteredCoffe: FilteredProps;
   basketProducts: BasketProductProps;
-  coffesQuantity: CoffeQuantity;
+  coffesQuantity: CoffeQuantityProps;
 };
 
 export default store;
