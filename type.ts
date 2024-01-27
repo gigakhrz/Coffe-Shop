@@ -3,6 +3,7 @@ export type RootStackParamList = {
   Basket: undefined;
   footer: undefined;
   Detail: {itemId: number | undefined};
+  Succes: undefined;
 };
 
 export type CoffeData = {
