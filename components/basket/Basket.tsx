@@ -5,6 +5,7 @@ import SelectedProducts from './SelectedProducts';
 import data from '../../data.json';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../feature/store';
+import BasketProducts from './BasketProducts';
 
 const Basket = (): JSX.Element => {
   const route = useRoute();
@@ -38,7 +39,7 @@ const Basket = (): JSX.Element => {
       ) : (
         <View style={styles.basketDiv}>
           <View style={styles.basktWrapper}>
-            <SelectedProducts />
+            <BasketProducts basketItems={basketItems} />
           </View>
         </View>
       )}
