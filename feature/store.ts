@@ -4,6 +4,7 @@ import categoryIdSlice, {CagatoryProps} from './categoryIdSlice';
 import filteredCoffesSlice, {FilteredProps} from './filteredCoffesSlice';
 import basketProductsSlice, {BasketProductProps} from './basketProductsSlice';
 import coffeQuantitySlice, {CoffeQuantityProps} from './coffeQuantitySlice';
+import totalPriceSlice, {TotalPriceProps} from './totalPriceSlice';
 
 const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ const store = configureStore({
     filteredCoffe: filteredCoffesSlice,
     basketProducts: basketProductsSlice,
     coffesQuantity: coffeQuantitySlice,
+    totalPrice: totalPriceSlice,
   },
 });
 
@@ -21,6 +23,7 @@ export type RootState = {
   filteredCoffe: FilteredProps;
   basketProducts: BasketProductProps;
   coffesQuantity: CoffeQuantityProps;
+  totalPrice: TotalPriceProps;
 };
 
 export default store;
