@@ -30,7 +30,7 @@ export default function SuccessOrder(): JSX.Element {
   return (
     // Main container with success message and image
     <View style={styles.MainCont}>
-      <Image source={require('../assets/iconSuccess.png')} />
+      <Image source={require('../assets/check.png')} />
       <View style={styles.viewSuccess}>
         <Text style={styles.congratSuccess}>Congratulations!</Text>
         <Text style={styles.successText}>
