@@ -18,13 +18,12 @@ const SelectedProducts = ({
       <Image
         style={styles.image}
         source={{
-          uri: 'https://png.pngtree.com/png-vector/20231102/ourmid/pngtree-a-cup-of-cappuccino-with-christmas-tree-latte-art-png-image_10357696.png',
+          uri: image,
         }}
       />
 
       <View style={styles.nameCountWrapper}>
-        <Text style={styles.name}></Text>
-
+        <Text style={styles.name}>{title}</Text>
         <View style={styles.countButtonsWrapper}>
           <TouchableOpacity style={styles.buttons}>
             <View style={styles.minus}></View>
