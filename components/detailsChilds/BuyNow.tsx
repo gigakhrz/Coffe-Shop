@@ -7,14 +7,17 @@ interface BuyNowProps {
 
 const BuyNow = ({itemId, price}: BuyNowProps): JSX.Element => {
   return (
-    <View style={styles.wrapper}>
-      <View style={styles.priceWrapper}>
-        <Text style={styles.priceText}>Price</Text>
-        <Text style={styles.priceNumber}>{price}</Text>
+    <View>
+      <View style={styles.line} />
+      <View style={styles.wrapper}>
+        <View style={styles.priceWrapper}>
+          <Text style={styles.priceText}>Price</Text>
+          <Text style={styles.priceNumber}>{price}</Text>
+        </View>
+        <TouchableOpacity style={styles.touchable}>
+          <Text style={styles.touchableText}>Buy Now</Text>
+        </TouchableOpacity>
       </View>
-      <TouchableOpacity style={styles.touchable}>
-        <Text style={styles.touchableText}>Buy Now</Text>
-      </TouchableOpacity>
     </View>
   );
 };
@@ -22,6 +25,11 @@ const BuyNow = ({itemId, price}: BuyNowProps): JSX.Element => {
 export default BuyNow;
 
 const styles = StyleSheet.create({
+  fullWrapper: {
+    width: '100%',
+    display: 'flex',
+  },
+
   wrapper: {
     width: '100%',
     display: 'flex',
@@ -62,5 +70,12 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     fontWeight: '600',
+  },
+
+  line: {
+    height: 1,
+    width: '100%',
+    backgroundColor: '#EAEAEA',
+    marginBottom: 21,
   },
 });
