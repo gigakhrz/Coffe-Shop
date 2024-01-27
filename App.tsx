@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react';
 import Footer from './components/Footer';
 // screens
 import MainPage from './components/MainPage';
-import Basket from './components/Basket';
+
 // navigators
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -12,6 +12,7 @@ import {RootStackParamList} from './type';
 import {Provider} from 'react-redux';
 import store from './feature/store';
 import Detail from './components/detailsChilds/Detail';
+import Basket from './components/basket/Basket';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 

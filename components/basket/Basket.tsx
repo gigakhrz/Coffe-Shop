@@ -1,10 +1,26 @@
 import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {useRoute} from '@react-navigation/native';
+import {useEffect} from 'react';
+import SelectedProducts from './SelectedProducts';
 
-const Basket = () => {
-  return <View></View>;
+const Basket = (): JSX.Element => {
+  const route = useRoute();
+
+  useEffect(() => {
+    console.log(route.name + '      baskeet');
+  }, [route.name]);
+  return (
+    <View style={styles.basktWrapper}>
+      <Text>i,m Basket</Text>
+      <SelectedProducts />
+    </View>
+  );
 };
 
-export default Basket;
+const styles = StyleSheet.create({
+  basktWrapper: {
+    width: '100%',
+  },
+});
 
-const styles = StyleSheet.create({});
+export default Basket;
