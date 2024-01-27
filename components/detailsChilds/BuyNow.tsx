@@ -1,6 +1,11 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-const BuyNow = (): JSX.Element => {
+interface BuyNowProps {
+  itemId: number | undefined;
+  price: number | undefined;
+}
+
+const BuyNow = ({itemId, price}: BuyNowProps): JSX.Element => {
   return (
     <View style={styles.wrapper}>
       <View style={styles.priceWrapper}>

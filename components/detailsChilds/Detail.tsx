@@ -29,7 +29,7 @@ const Detail: React.FC<{route: DetailScreenRouteProp}> = ({route}) => {
           shortDescription={coffe?.shortDescription}
         />
       </ScrollView>
-      <BuyNow />
+      <BuyNow itemId={coffe?.id} price={coffe?.price} />
     </View>
   );
 };
