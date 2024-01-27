@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
   basketDiv: {
     width: '100%',
     paddingBottom: 30,
+    paddingHorizontal: 20,
   },
 });
 

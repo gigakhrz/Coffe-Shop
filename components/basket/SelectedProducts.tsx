@@ -12,7 +12,7 @@ const SelectedProducts = (): JSX.Element => {
       />
 
       <View style={styles.nameCountWrapper}>
-        <Text style={styles.name}>capucino</Text>
+        <Text style={styles.name}>capucino hazelhut</Text>
 
         <View style={styles.countButtonsWrapper}>
           <TouchableOpacity style={styles.buttons}>
