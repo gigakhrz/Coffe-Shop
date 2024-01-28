@@ -25,10 +25,19 @@ const coffesQuantitySlice = createSlice({
     setCoffesQuantity: (state, action: PayloadAction<number[]>) => {
       state.coffesQuantity = action.payload;
     },
+
+    removeQuantity: (state, action: PayloadAction<number>) => {
+      const coffeIndex = action.payload;
+      state.coffesQuantity.filter((item, index) => index !== coffeIndex);
+    },
   },
 });
 
-export const {increaseQuantity, recreaseQuantity, setCoffesQuantity} =
-  coffesQuantitySlice.actions;
+export const {
+  increaseQuantity,
+  recreaseQuantity,
+  setCoffesQuantity,
+  removeQuantity,
+} = coffesQuantitySlice.actions;
 
 export default coffesQuantitySlice.reducer;

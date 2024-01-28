@@ -1,13 +1,17 @@
 import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {CoffeData} from '../../type';
 import SelectedProducts from './SelectedProducts';
 
 interface BasketProductsProps {
   basketItems: CoffeData[];
+  setIndex: (index: number) => void;
 }
 
-const BasketProducts = ({basketItems}: BasketProductsProps): JSX.Element => {
+const BasketProducts = ({
+  basketItems,
+  setIndex,
+}: BasketProductsProps): JSX.Element => {
   return (
     <View style={styles.wrapper}>
       {basketItems.map((coffe, index) => {
@@ -17,6 +21,7 @@ const BasketProducts = ({basketItems}: BasketProductsProps): JSX.Element => {
             index={index}
             title={coffe.title}
             image={coffe.image}
+            id={coffe.id}
           />
         );
       })}

@@ -1,11 +1,13 @@
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {CoffeData} from '../../type';
 import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../../feature/store';
 import {
   increaseQuantity,
   recreaseQuantity,
+  removeQuantity,
+  setCoffesQuantity,
 } from '../../feature/coffeQuantitySlice';
 import {setRemoveProduct} from '../../feature/basketProductsSlice';
 
@@ -39,6 +41,7 @@ const SelectedProducts = ({
     const itemIdToRemove = selectedCoffes[index]; // Use the individual item, not an array
     dispatch(setRemoveProduct(itemIdToRemove));
   };
+
   return (
     <View style={styles.wrapper}>
       <TouchableOpacity onPress={handleRemoveItem}>

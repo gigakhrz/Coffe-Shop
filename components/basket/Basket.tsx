@@ -1,12 +1,14 @@
 import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
 import {useRoute} from '@react-navigation/native';
-import {useEffect} from 'react';
-import SelectedProducts from './SelectedProducts';
+import {useEffect, useState} from 'react';
 import data from '../../data.json';
 import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from '../../feature/store';
 import BasketProducts from './BasketProducts';
-import {setCoffesQuantity} from '../../feature/coffeQuantitySlice';
+import {
+  removeQuantity,
+  setCoffesQuantity,
+} from '../../feature/coffeQuantitySlice';
 import PaymentSummary from './PaymentSummary';
 import Discount from './Discount';
 import OrderButton from './OrderButton';
@@ -14,6 +16,14 @@ import OrderButton from './OrderButton';
 const Basket = (): JSX.Element => {
   const route = useRoute();
   const dispatch = useDispatch();
+
+  const [index, setIndex] = useState<number | undefined>();
+
+  // coffes quantities state
+
+  const quantities = useSelector(
+    (store: RootState) => store.coffesQuantity.coffesQuantity,
+  );
 
   // protucts id that selected from user
   const selectedCoffes = useSelector(
@@ -27,7 +37,16 @@ const Basket = (): JSX.Element => {
 
   // this useState will create the coffes quantity's array
   useEffect(() => {
-    dispatch(setCoffesQuantity(Array(basketItems.length).fill(1)));
+    if (selectedCoffes.length > quantities.length) {
+      // Increase quantities array when a new item is added
+      dispatch(setCoffesQuantity([...quantities, 1]));
+    } else if (
+      selectedCoffes.length < quantities.length &&
+      index !== undefined
+    ) {
+      // Decrease quantities array when an item is removed
+      dispatch(removeQuantity(index));
+    }
   }, [selectedCoffes]);
 
   return (
@@ -47,7 +66,7 @@ const Basket = (): JSX.Element => {
       ) : (
         <View style={styles.basketDiv}>
           <View style={styles.basktWrapper}>
-            <BasketProducts basketItems={basketItems} />
+            <BasketProducts basketItems={basketItems} setIndex={setIndex} />
             <Discount />
             <PaymentSummary basketItems={basketItems} />
             <OrderButton />
