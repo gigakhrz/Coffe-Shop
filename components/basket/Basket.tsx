@@ -37,16 +37,7 @@ const Basket = (): JSX.Element => {
 
   // this useState will create the coffes quantity's array
   useEffect(() => {
-    if (selectedCoffes.length > quantities.length) {
-      // Increase quantities array when a new item is added
-      dispatch(setCoffesQuantity([...quantities, 1]));
-    } else if (
-      selectedCoffes.length < quantities.length &&
-      index !== undefined
-    ) {
-      // Decrease quantities array when an item is removed
-      dispatch(removeQuantity(index));
-    }
+    dispatch(setCoffesQuantity(Array(selectedCoffes.length).fill(1)));
   }, [selectedCoffes]);
 
   return (
